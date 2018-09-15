@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "The DevX Website, 2018-2019",
   "main": "index.js",
+  "repository": "https://github.com/ucladevx/website-v2",
   "scripts": {
     "build": "webpack --mode production",
     "start": "webpack-dev-server --mode development",
