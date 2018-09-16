@@ -14,6 +14,7 @@
 .lib_col {
   display: flex;
   flex-flow: column;
+  align-items: flex-start;
 }
 
 .lib_row-item {
@@ -25,4 +26,16 @@
 
 .lib_col-item {
   width: 100%;
+}
+
+.lib_pill {
+  border-radius: 21.5px;
+  padding: 14px;
+  display: inline-flex;
+}
+
+.lib_ellipse {
+  background: radial-gradient(300px at 50% 50%, rgba(9, 7, 100, 0.6) 0%, rgba(255, 255, 255, 0) 100%), $background;
+  height: 1068px;
+  width: 1068px;
 }

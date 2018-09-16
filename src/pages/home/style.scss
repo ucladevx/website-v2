@@ -1,0 +1,48 @@
+.home-container {
+  .heading {
+    background: $background;
+    color: $white;
+    height: 100vh;
+    z-index: 1;
+  }
+  .content {
+    position: absolute;
+    bottom: 100px;
+    z-index: 2;
+    left: 139px;
+
+    .lib_col {
+      & > * {
+        margin: 0 0 8px 0;
+      }
+
+      img {
+        height: 100px;
+        position: relative;
+        left: -10px;
+      }
+
+      h3 {
+        letter-spacing: 4px;
+      }
+
+      .lib_pill {
+        background: $white;
+        color: $background;
+        letter-spacing: 3px;
+      }
+    }
+  }
+
+  .ellipse-container {
+    position: relative;
+    z-index: 1;
+  }
+
+  .what-is-container {
+    background-color: $white;
+    z-index: 2;
+    position: relative;
+    padding: 150px;
+  }
+}
