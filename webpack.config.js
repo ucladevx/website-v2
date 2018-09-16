@@ -1,3 +1,4 @@
+const path = require('path')
 const HtmlWebPackPlugin = require('html-webpack-plugin')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 
@@ -21,6 +22,15 @@ module.exports = {
         ],
       },
       {
+        test: /\.(jpg|png|svg)$/,
+        use: {
+          loader: 'file-loader',
+          options: {
+            name: '[path][name].[ext]'
+          }
+        }
+      },
+      {
         test: /\.html$/,
         use: {
           loader: 'html-loader'
@@ -36,5 +46,10 @@ module.exports = {
       template: './src/index.html',
       filename: 'index.html'
     })
-  ]
+  ],
+  resolve: {
+    alias: {
+      images: path.resolve(__dirname, 'images')
+    }
+  }
 }
