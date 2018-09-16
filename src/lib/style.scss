@@ -39,3 +39,22 @@
   height: 1068px;
   width: 1068px;
 }
+
+.lib_section {
+  padding: 150px;
+  display: flex;
+
+  & > * {
+    width: 50%;
+  }
+
+  &.left {
+    align-items: flex-start;
+  }
+  &.right {
+    align-items: flex-end;
+  }
+  &.middle {
+    align-items: center;
+  }
+}
