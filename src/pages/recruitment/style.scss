@@ -1,0 +1,78 @@
+.recruitment-container {
+    background: $background;
+    color: $white;
+    padding: 80px 139px;
+
+    .heading {
+        padding: 20px 0;
+        left: 139px;
+        z-index: 2;
+
+        .lib_pill {
+            background: $white;
+            color: $background;
+            letter-spacing: 3px;
+        }
+    }
+
+    .content {
+        .panel {
+            margin: 20px 0;
+
+            .grid {
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                margin: 40px 0;
+            }
+
+            .name {
+                margin-bottom: 10px;
+                color: $yellow;
+                font-weight: 500;
+            }
+
+            .role {
+                flex: 0 1 33%;
+                padding-right: 50px;
+                padding-bottom: 50px;
+                
+                .icon {
+                    text-align: center;
+                    height: 120px;
+                    margin-bottom: 20px;
+                }
+            }
+
+            .step {
+                flex: 0 1 50%;
+                margin-bottom: 50px;
+                padding-right: 50px;
+
+                .container-row {
+                    display: flex;
+                    flex-direction: row;
+                }
+
+                .number-container {
+                    display: inline-block;
+                    margin-right: 20px;
+
+                    .number {
+                        background-color: $white;
+                        color: $background;
+                        border-radius: 50px;
+                        height: 40px;
+                        width: 40px;
+                        text-align: center;
+                        padding: 10px;
+                    }
+                }
+
+                .text-container {
+                    display: inline-block;
+                }
+            }
+        }
+    }
+}
