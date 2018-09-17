@@ -24,7 +24,7 @@ const TeamPanel = () => {
             const Img = require('images/' + icon)
 
             return (
-              <div className="role">
+              <div key={name} className="role">
                 <img src={Img} className="icon" />
                 <h3 className="name">{name}</h3>
                 <p>{description}</p>
@@ -41,7 +41,7 @@ const TeamPanel = () => {
             const { step, name, description } = s
 
             return (
-              <div className="step">
+              <div key={step} className="step">
                 <div className="container-row">
                   <div className="number-container">
                     <div className="number">{step}</div>
@@ -64,7 +64,7 @@ const TeamPanel = () => {
             const { name, date } = d
 
             return (
-              <div className="date">
+              <div key={name} className="date">
                 <h3 className="name">{name}</h3>
                 <p>{date}</p>
               </div>
