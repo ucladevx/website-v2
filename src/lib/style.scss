@@ -15,8 +15,13 @@
 .lib_col {
   display: flex;
   flex-flow: column;
-  align-items: flex-start;
+  align-items: center;
+  text-align: center;
 
+  @include md {
+    align-items: flex-start;
+    text-align: auto;
+  }
   &.middle {
     align-items: center;
   }
@@ -73,15 +78,15 @@
 }
 
 .lib_section {
-  padding: 80px;
+  padding: 40px;
   display: flex;
 
   & > * {
     @include md {
       width: 75%;
+      text-align: left;
     }
     @include lg {
-      text-align: left;
       width: 50%;
     }
   }

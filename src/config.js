@@ -5,14 +5,6 @@ export default {
       path: '/'
     },
     {
-      label: 'TEAM',
-      path: '/team'
-    },
-    {
-      label: 'PROJECTS',
-      path: '/projects'
-    },
-    {
       label: 'RECRUITMENT',
       path: '/recruitment'
     }

@@ -8,31 +8,41 @@ class Recruitment extends React.Component {
     super(props)
 
     this.state = {
-      team: true
+      role: 'TEAM'
     }
   }
 
-  onPillClick = () => {
+  onPillClick = role => {
     this.setState(prevState => ({
-      team: !prevState.team
+      role
     }))
   }
 
   render() {
-    const { team } = this.state
+    const { role } = this.state
     return (
       <div className="recruitment-container">
         <div className="heading">
           <Pill outline="yellow">
-            <PillItem color="yellow" onClick={this.onPillClick} fill={!team}>
+            <PillItem
+              color="yellow"
+              onClick={() => this.onPillClick('PM')}
+              fill={role === 'PM'}
+            >
               PM
             </PillItem>
-            <PillItem color="yellow" onClick={this.onPillClick} fill={team}>
+            <PillItem
+              color="yellow"
+              onClick={() => this.onPillClick('TEAM')}
+              fill={role === 'TEAM'}
+            >
               Team
             </PillItem>
           </Pill>
         </div>
-        <div className="content">{team ? <TeamPanel /> : <PMPanel />}</div>
+        <div className="content">
+          {role === 'TEAM' ? <TeamPanel /> : <PMPanel />}
+        </div>
       </div>
     )
   }

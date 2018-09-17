@@ -1,33 +1,43 @@
 .home-container {
   .heading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background: $background;
     color: $white;
     height: 100vh;
     z-index: 1;
   }
   .content {
-    position: absolute;
-    bottom: 100px;
-    z-index: 2;
-    left: 139px;
-
     .lib_col {
+      align-items: center;
+
       & > * {
         margin: 0 0 28px 0;
       }
+    }
 
-      img {
-        height: 68px;
-      }
+    @include md {
+      position: absolute;
+      bottom: 100px;
+      z-index: 2;
+      left: 139px;
 
-      h3 {
-        letter-spacing: 4px;
-      }
+      .lib_col {
+        align-items: flex-start;
+        img {
+          height: 68px;
+        }
 
-      .lib_pill {
-        background: $white;
-        color: $background;
-        letter-spacing: 3px;
+        h3 {
+          letter-spacing: 4px;
+        }
+
+        .lib_pill {
+          background: $white;
+          color: $background;
+          letter-spacing: 3px;
+        }
       }
     }
   }
