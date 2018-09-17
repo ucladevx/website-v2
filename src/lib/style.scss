@@ -1,6 +1,7 @@
 .lib_row {
   display: flex;
   flex-flow: row;
+  align-items: center;
 
   &.max-height {
     height: 100%;
@@ -15,6 +16,10 @@
   display: flex;
   flex-flow: column;
   align-items: flex-start;
+
+  &.middle {
+    align-items: center;
+  }
 }
 
 .lib_row-item {
@@ -31,6 +36,19 @@
 .lib_pill {
   padding: 10px 16px;
   display: inline-flex;
+  cursor: pointer;
+
+  &:first-of-type {
+    border-radius: 21.5px 0 0 21.5px;
+  }
+
+  &:last-of-type {
+    border-radius: 0 21.5px 21.5px 0;
+  }
+
+  &:only-of-type {
+    border-radius: 21.5px;
+  }
 }
 
 .lib_ellipse {
@@ -40,20 +58,40 @@
 }
 
 .lib_section {
-  padding: 150px;
+  padding: 80px;
   display: flex;
 
   & > * {
-    width: 50%;
+    @include md {
+      width: 75%;
+    }
+    @include lg {
+      text-align: left;
+      width: 50%;
+    }
   }
-
+  &.small {
+    padding: 100px;
+  }
   &.left {
-    align-items: flex-start;
+    justify-content: flex-start;
   }
   &.right {
-    align-items: flex-end;
+    justify-content: flex-end;
   }
   &.middle {
-    align-items: center;
+    & > * {
+      width: auto;
+      text-align: center;
+    }
+    justify-content: center;
+  }
+  &.blue {
+    background-color: $background;
+    color: $white;
+  }
+
+  @include md {
+    padding: 150px;
   }
 }

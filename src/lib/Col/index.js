@@ -1,11 +1,9 @@
 import React from 'react'
+import classnames from 'classnames'
 
-const Col = ({ children }) => {
-  return (
-    <div className='lib_col'>
-      {children}
-    </div>
-  )
+const Col = ({ children, middle }) => {
+  const classNames = classnames('lib_col', { middle })
+  return <div className={classNames}>{children}</div>
 }
 
 export default Col

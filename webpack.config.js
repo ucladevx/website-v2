@@ -1,58 +1,60 @@
-const path = require("path");
-const HtmlWebPackPlugin = require("html-webpack-plugin");
-const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+const path = require('path')
+const HtmlWebPackPlugin = require('html-webpack-plugin')
+const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 
 module.exports = {
-  entry: "./src/main.js",
+  entry: './src/main.js',
   module: {
     rules: [
       {
         test: /\.js$/,
         exclude: /node_modules/,
         use: {
-          loader: "babel-loader"
+          loader: 'babel-loader'
         }
       },
       {
         test: /\.scss$/,
         use: [
           MiniCssExtractPlugin.loader,
-          { loader: "css-loader", options: { url: false, sourceMap: true } },
-          { loader: "sass-loader", options: { sourceMap: true } }
+          { loader: 'css-loader', options: { url: false, sourceMap: true } },
+          { loader: 'sass-loader', options: { sourceMap: true } }
         ]
       },
       {
-        test: /\.(jpg|png|svg)$/,
+        test: /\.(jpg|png|svg|pdf)$/,
         use: {
-          loader: "file-loader",
+          loader: 'file-loader',
           options: {
-            name: "[path][name].[ext]"
+            name: '[path][name].[ext]'
           }
         }
       },
       {
         test: /\.html$/,
         use: {
-          loader: "html-loader"
+          loader: 'html-loader'
         }
       }
     ]
   },
   plugins: [
     new MiniCssExtractPlugin({
-      filename: "style.css"
+      filename: 'style.css'
     }),
     new HtmlWebPackPlugin({
-      template: "./src/index.html",
-      filename: "index.html"
+      template: './src/index.html',
+      filename: 'index.html'
     })
   ],
   resolve: {
     alias: {
-      images: path.resolve(__dirname, "images")
+      images: path.resolve(__dirname, 'assets/images'),
+      assets: path.resolve(__dirname, 'assets'),
+      lib: path.resolve(__dirname, 'src/lib')
     }
   },
   devServer: {
     historyApiFallback: true
   }
-};
+}

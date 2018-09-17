@@ -13,13 +13,11 @@
 
     .lib_col {
       & > * {
-        margin: 0 0 8px 0;
+        margin: 0 0 28px 0;
       }
 
       img {
-        height: 100px;
-        position: relative;
-        left: -10px;
+        height: 68px;
       }
 
       h3 {
@@ -43,5 +41,24 @@
     background-color: $white;
     z-index: 2;
     position: relative;
+  }
+
+  .footer-container {
+    img {
+      &.logo {
+        width: 156px;
+        margin-bottom: 36px;
+      }
+      width: 33px;
+    }
+
+    h5 {
+      margin-bottom: 25px;
+    }
+
+    .icons-row {
+      width: 200px;
+      margin-bottom: 24px;
+    }
   }
 }
