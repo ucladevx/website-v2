@@ -8,7 +8,7 @@
     "build": "webpack --mode production",
     "start": "webpack-dev-server --mode development",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "pretty": "prettier '**/*.js'"
+    "pretty": "prettier --write '**/*.js'"
   },
   "author": "",
   "license": "ISC",
