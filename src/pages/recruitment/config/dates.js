@@ -1,5 +1,18 @@
 const dates = {
-  pm: {},
+  pm: [
+    {
+      name: 'Application Release',
+      date: 'September 24 (Monday of Week 0)'
+    },
+    {
+      name: 'Application Deadline',
+      date: 'September 28 (Friday of Week 0)'
+    },
+    {
+      name: 'Interview',
+      date: 'September 29-30 (Weekend of Week 0)'
+    }
+  ],
   team: [
     {
       name: 'Application Release',

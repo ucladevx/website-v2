@@ -1,7 +1,7 @@
 import React from 'react'
 import { Pill, PillItem } from '../../lib'
 import TeamPanel from './components/TeamPanel'
-//import PMPanel from './components/PMPanel'
+import PMPanel from './components/PMPanel'
 
 class Recruitment extends React.Component {
   constructor(props) {
@@ -32,7 +32,7 @@ class Recruitment extends React.Component {
             </PillItem>
           </Pill>
         </div>
-        <div className="content">{team ? <TeamPanel /> : null}</div>
+        <div className="content">{team ? <TeamPanel /> : <PMPanel />}</div>
       </div>
     )
   }

@@ -65,15 +65,10 @@
                     padding-right: 50px;
                 }
 
-                .container-row {
-                    display: flex;
-                    flex-direction: row;
-                }
-
                 .number-container {
                     display: inline-block;
                     margin-right: 20px;
-
+    
                     .number {
                         background-color: $white;
                         color: $background;
@@ -85,6 +80,11 @@
                     }
                 }
 
+                .container-row {
+                    display: flex;
+                    flex-direction: row;
+                }
+    
                 .text-container {
                     display: inline-block;
                 }
@@ -93,6 +93,44 @@
             .date {
                 padding-right: 50px;
                 margin-bottom: 50px;
+            }
+        }
+
+        .jumbo {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap-reverse;
+            justify-content: space-between;
+
+            .text-container {
+                @include xs {
+                    flex: 0 1 100%;
+                }
+                @include lg {
+                    flex: 0 1 60%;
+                }
+            }
+
+            .img-container {
+                @include xs {
+                    text-align: center;
+                    flex: 0 1 100%;
+
+                    img {
+                        height: 300px;
+                        margin-bottom: 30px;
+                    }
+                }
+
+                @include lg {
+                    text-align: right;
+                    flex: 0 1 40%;
+
+                    img {
+                        height: auto;
+                        margin-bottom: 50px;
+                    }
+                }
             }
         }
     }

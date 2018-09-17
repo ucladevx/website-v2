@@ -2,11 +2,28 @@ const recruitment = {
   pm: [
     {
       step: '1',
-      name: 'Application Release',
+      name: 'Submit Online Application',
       description:
-        'Tell us about your experience and interest in product development at <insert airtable link>. We’ll be looking for your resume and portfolio.'
+        'Tell us about your interests and how you think you can contribute to DevX at TODO ADD LINK. We’ll be looking for your resume and portfolio (if applicable).'
     },
-    {}
+    {
+      step: '2',
+      name: 'Board Review',
+      description:
+        'We will holistically evaluate applicants, looking for experience and passion. Following this, some of you will receive invites to Recruiting Night.'
+    },
+    {
+      step: '3',
+      name: 'Interview',
+      description:
+        'This is our opportunity to evaluate mutual fit. We’re interested in the ideas that you have but we’re even more interested in your skillset and process.'
+    },
+    {
+      step: '4',
+      name: 'Final Decisions',
+      description:
+        'Successful applicants will receive an email invite from us. Welcome to DevX!'
+    }
   ],
   team: [
     {

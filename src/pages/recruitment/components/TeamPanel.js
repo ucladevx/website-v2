@@ -1,8 +1,7 @@
 import React from 'react'
 
 import roles from '../config/roles'
-import recruitment from '../config/recruitment'
-import dates from '../config/dates'
+import RecruitmentSection from './RecruitmentSection'
 
 const TeamPanel = () => {
   return (
@@ -33,45 +32,7 @@ const TeamPanel = () => {
           })}
         </div>
       </section>
-      <section>
-        <h2>Recruitment Process</h2>
-        <br />
-        <div className="grid">
-          {recruitment.team.map(s => {
-            const { step, name, description } = s
-
-            return (
-              <div key={step} className="step">
-                <div className="container-row">
-                  <div className="number-container">
-                    <div className="number">{step}</div>
-                  </div>
-                  <div className="text-container">
-                    <h3 className="name">{name}</h3>
-                    <p>{description}</p>
-                  </div>
-                </div>
-              </div>
-            )
-          })}
-        </div>
-      </section>
-      <section>
-        <h2>Fall 2018 Recruitment Dates</h2>
-        <br />
-        <div className="grid">
-          {dates.team.map(d => {
-            const { name, date } = d
-
-            return (
-              <div key={name} className="date">
-                <h3 className="name">{name}</h3>
-                <p>{date}</p>
-              </div>
-            )
-          })}
-        </div>
-      </section>
+      <RecruitmentSection type="team" />
     </div>
   )
 }
