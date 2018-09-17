@@ -15,6 +15,10 @@
   display: flex;
   flex-flow: column;
   align-items: flex-start;
+
+  &.middle {
+    align-items: center;
+  }
 }
 
 .lib_row-item {
@@ -49,12 +53,16 @@
   }
 
   &.left {
-    align-items: flex-start;
+    justify-content: flex-start;
   }
   &.right {
-    align-items: flex-end;
+    justify-content: flex-end;
   }
   &.middle {
-    align-items: center;
+    justify-content: center;
+  }
+  &.blue {
+    background-color: $background;
+    color: $white;
   }
 }
