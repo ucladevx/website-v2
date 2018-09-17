@@ -6,7 +6,11 @@ import Link from './Link'
 import logo from 'images/logo.svg'
 
 const links = Config.links.map(link => {
-  return <Link to={link.path}>{link.label}</Link>
+  return (
+    <Link key={link.path} to={link.path}>
+      {link.label}
+    </Link>
+  )
 })
 
 const Navbar = () => {
