@@ -1,13 +1,15 @@
 import React from 'react'
-import { Pill } from '../../lib'
+import { Pill, PillItem } from '../../lib'
 import TeamPanel from './components/TeamPanel'
 
 const Recruitment = () => (
   <div className="recruitment-container">
     <div className="heading">
-      <Pill>
-        <div>PM</div>
-        <div>Team</div>
+      <Pill outline="yellow">
+        <PillItem color="yellow">PM</PillItem>
+        <PillItem color="yellow" fill>
+          Team
+        </PillItem>
       </Pill>
     </div>
     <div className="content">
