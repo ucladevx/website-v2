@@ -6,7 +6,7 @@ const Icons = () => {
   const icons = Config.icons.map(icon => {
     const Img = require('images/' + icon.path)
     return (
-      <RowItem>
+      <RowItem key={icon.path}>
         <a target="_blank" href={icon.url}>
           <img src={Img} />
         </a>
