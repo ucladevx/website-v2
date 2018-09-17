@@ -19,7 +19,7 @@ module.exports = {
           MiniCssExtractPlugin.loader,
           { loader: 'css-loader', options: { url: false, sourceMap: true } },
           { loader: 'sass-loader', options: { sourceMap: true } }
-        ],
+        ]
       },
       {
         test: /\.(jpg|png|svg)$/,
@@ -40,7 +40,7 @@ module.exports = {
   },
   plugins: [
     new MiniCssExtractPlugin({
-      filename: "style.css"
+      filename: 'style.css'
     }),
     new HtmlWebPackPlugin({
       template: './src/index.html',
@@ -49,7 +49,8 @@ module.exports = {
   ],
   resolve: {
     alias: {
-      images: path.resolve(__dirname, 'images')
+      images: path.resolve(__dirname, 'images'),
+      lib: path.resolve(__dirname, 'src/lib')
     }
   }
 }

@@ -1,6 +1,7 @@
 .lib_row {
   display: flex;
   flex-flow: row;
+  align-items: center;
 
   &.max-height {
     height: 100%;
@@ -45,15 +46,21 @@
 }
 
 .lib_section {
-  padding: 150px;
+  padding: 80px;
   display: flex;
 
   & > * {
+    @include md {
+      width: 75%;
+    }
     @include lg {
+      text-align: left;
       width: 50%;
     }
   }
-
+  &.small {
+    padding: 100px;
+  }
   &.left {
     justify-content: flex-start;
   }
@@ -61,10 +68,18 @@
     justify-content: flex-end;
   }
   &.middle {
+    & > * {
+      width: auto;
+      text-align: center;
+    }
     justify-content: center;
   }
   &.blue {
     background-color: $background;
     color: $white;
+  }
+
+  @include md {
+    padding: 150px;
   }
 }

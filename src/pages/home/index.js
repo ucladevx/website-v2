@@ -1,6 +1,7 @@
 import React from 'react'
 import { Col, Pill, Ellipse, Section } from '../../lib'
 import logo from 'images/logo.svg'
+import Icons from './icons'
 
 const Home = () => (
   <div className="home-container">
@@ -47,6 +48,19 @@ const Home = () => (
             backgrounds and skill levels are welcome! Check out our Recruitment
             page to see how our process works.
           </h3>
+        </Col>
+      </Section>
+    </div>
+    <div className="footer-container">
+      <Section middle blue small>
+        <Col middle>
+          <img src={logo} className="logo" />
+          <h5>
+            Want to help one of the most influential organizations at UCLA?
+            Sponsor Us.
+          </h5>
+          <Icons />
+          <p>Copyright © 2018 UCLA DevX</p>
         </Col>
       </Section>
     </div>
