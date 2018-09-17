@@ -1,5 +1,22 @@
 export default {
-  links: ['home', 'team', 'projects', 'recruitment'],
+  links: [
+    {
+      label: 'HOME',
+      path: '/'
+    },
+    {
+      label: 'TEAM',
+      path: '/team'
+    },
+    {
+      label: 'PROJECTS',
+      path: '/projects'
+    },
+    {
+      label: 'RECRUITMENT',
+      path: '/recruitment'
+    }
+  ],
   icons: [
     {
       path: 'fb.svg',
