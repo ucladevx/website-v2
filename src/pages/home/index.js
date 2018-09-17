@@ -1,7 +1,10 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import { Col, Pill, Ellipse, Section } from '../../lib'
 import logo from 'images/logo.svg'
+import sponsorship from 'assets/sponsorship_brochure.pdf'
 import Icons from './icons'
+import JoinUs from './joinUs'
 
 const Home = () => (
   <div className="home-container">
@@ -10,7 +13,7 @@ const Home = () => (
         <Col>
           <img src={logo} />
           <h3>MOONSHOTS FOR UCLA</h3>
-          <Pill>JOIN US</Pill>
+          <JoinUs />
         </Col>
       </div>
     </div>
@@ -45,8 +48,9 @@ const Home = () => (
           <h1>Want to Apply?</h1>
           <h3>
             We accept applications in the Fall, Winter and Spring. All
-            backgrounds and skill levels are welcome! Check out our Recruitment
-            page to see how our process works.
+            backgrounds and skill levels are welcome! Check out our{' '}
+            <Link to="/recruitment">Recruitment</Link> page to see how our
+            process works.
           </h3>
         </Col>
       </Section>
@@ -56,8 +60,11 @@ const Home = () => (
         <Col middle>
           <img src={logo} className="logo" />
           <h5>
-            Want to help one of the most influential organizations at UCLA?
-            Sponsor Us.
+            Want to help one of the most influential organizations at UCLA?{' '}
+            <a href={sponsorship} target="_blank">
+              Sponsor Us
+            </a>
+            .
           </h5>
           <Icons />
           <p>Copyright © 2018 UCLA DevX</p>

@@ -22,7 +22,7 @@ module.exports = {
         ]
       },
       {
-        test: /\.(jpg|png|svg)$/,
+        test: /\.(jpg|png|svg|pdf)$/,
         use: {
           loader: 'file-loader',
           options: {
@@ -49,7 +49,8 @@ module.exports = {
   ],
   resolve: {
     alias: {
-      images: path.resolve(__dirname, 'images'),
+      images: path.resolve(__dirname, 'assets/images'),
+      assets: path.resolve(__dirname, 'assets'),
       lib: path.resolve(__dirname, 'src/lib')
     }
   }
