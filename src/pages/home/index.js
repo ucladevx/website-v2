@@ -23,12 +23,14 @@ const Home = () => (
           <h1>What is DevX</h1>
           <h5>
             Have you ever felt that all you were learning at UCLA was theory,
-            with little opportunities to build out practical applications? DevX
-            is a brand new program dedicated to solving that very problem! Build
-            out real-world projects to help tackle pressing problems frustrating
-            the UCLA community, grow your technical skills by pairing up with
-            experienced students, and build a network that lasts beyond
-            graduation.
+            with little opportunities to build out practical applications?
+            <br />
+            <br />
+            DevX is a brand new program dedicated to solving that very problem!
+            Build out real-world projects to help tackle pressing problems
+            frustrating the UCLA community, grow your technical skills by
+            pairing up with experienced students, and build a network that lasts
+            beyond graduation.
           </h5>
         </Col>
       </Section>
@@ -37,9 +39,14 @@ const Home = () => (
           <h1>Our Initiative</h1>
           <h5>
             We focus on a wide variety of projects, but prioritize ventures that
-            improve the college experience for UCLA students. Every quarter we
-            will develop solutions for the most popular initiatives by the
-            community. Submit your own requests for problems you're facing.
+            improve the college experience for UCLA students.
+            <br />
+            <br />
+          </h5>
+          <h5>
+            Every quarter we will develop solutions for the most popular
+            initiatives by the community. Submit your own requests for problems
+            you're facing.
           </h5>
         </Col>
       </Section>
