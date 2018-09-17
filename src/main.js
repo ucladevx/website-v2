@@ -6,7 +6,6 @@ import { BrowserRouter, Route, Switch } from 'react-router-dom'
 
 import Navbar from './navbar'
 import pages from './pages'
-console.log(pages)
 import Home from './pages/home'
 import Recruitment from './pages/recruitment'
 
