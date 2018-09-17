@@ -34,10 +34,21 @@
 }
 
 .lib_pill {
-  border-radius: 21.5px;
-  padding: 14px;
+  padding: 12px 16px;
   display: inline-flex;
   cursor: pointer;
+
+  &:first-of-type {
+    border-radius: 21.5px 0 0 21.5px;
+  }
+
+  &:last-of-type {
+    border-radius: 0 21.5px 21.5px 0;
+  }
+
+  &:only-of-type {
+    border-radius: 21.5px;
+  }
 }
 
 .lib_ellipse {

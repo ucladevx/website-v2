@@ -9,7 +9,9 @@ const JoinUs = withRouter(({ history }) => {
         history.push('/recruitment')
       }}
     >
-      <Pill>JOIN US</Pill>
+      <Pill fill white>
+        JOIN US
+      </Pill>
     </div>
   )
 })
