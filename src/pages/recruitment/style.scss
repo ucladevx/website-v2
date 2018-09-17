@@ -1,0 +1,33 @@
+.recruitment-container {
+    background: $background;
+    color: $white;
+    padding: 80px 139px;
+
+    .heading {
+        padding: 20px 0;
+        left: 139px;
+        z-index: 2;
+
+        .lib_pill {
+            background: $white;
+            color: $background;
+            letter-spacing: 3px;
+        }
+    }
+
+    .content {
+        height: 100vh;
+
+        .panel {
+            margin: 20px 0;
+
+            .roles-grid {
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                margin: 20px 0;
+
+            }
+        }
+    }
+}

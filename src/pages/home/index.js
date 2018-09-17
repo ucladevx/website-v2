@@ -12,7 +12,9 @@ const Home = () => (
         <Col>
           <img src={logo} />
           <h3>MOONSHOTS FOR UCLA</h3>
-          <Pill>JOIN US</Pill>
+          <Pill fill white>
+            <div>JOIN US</div>
+          </Pill>
         </Col>
       </div>
     </div>
