@@ -1,7 +1,15 @@
 .recruitment-container {
     background: $background;
     color: $white;
-    padding: 80px 139px;
+
+    // responsive "margins"
+    padding: 80px 50px;
+    @include sm {
+        padding: 80px;
+    }
+    @include lg {
+        padding: 80px 139px;
+    }
 
     .heading {
         padding: 20px 0;
@@ -23,6 +31,7 @@
                 display: flex;
                 flex-direction: row;
                 flex-wrap: wrap;
+                justify-content: space-between;
                 margin: 40px 0;
             }
 
@@ -33,8 +42,16 @@
             }
 
             .role {
-                flex: 0 1 33%;
-                padding-right: 50px;
+                flex: 0 1 100%;
+                padding-right: 0px;
+                @include md {
+                    flex: 0 1 50%;
+                    padding-right: 50px;
+                }
+                @include lg {
+                    flex: 0 1 33%;
+                    padding-right: 50px;
+                }
                 padding-bottom: 50px;
                 
                 .icon {
@@ -45,9 +62,14 @@
             }
 
             .step {
-                flex: 0 1 50%;
+                flex: 0 1 100%;
+                padding-right: 0px;
                 margin-bottom: 50px;
-                padding-right: 50px;
+
+                @include lg {
+                    flex: 0 1 50%;
+                    padding-right: 50px;
+                }
 
                 .container-row {
                     display: flex;
@@ -72,6 +94,11 @@
                 .text-container {
                     display: inline-block;
                 }
+            }
+
+            .date {
+                padding-right: 50px;
+                margin-bottom: 50px;
             }
         }
     }
