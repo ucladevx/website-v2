@@ -1,11 +1,11 @@
-import "./main.scss";
-import React from "react";
-import { Fragment } from "react";
-import ReactDOM from "react-dom";
-import { BrowserRouter, Route, Switch } from "react-router-dom";
+import './main.scss'
+import React from 'react'
+import { Fragment } from 'react'
+import ReactDOM from 'react-dom'
+import { BrowserRouter, Route, Switch } from 'react-router-dom'
 
-import Navbar from "./navbar";
-import Home from "./pages/home";
+import Navbar from './navbar'
+import pages from './pages'
 
 const App = () => (
   <BrowserRouter>
@@ -13,19 +13,19 @@ const App = () => (
       <Navbar />
       <Switch>
         {Object.keys(pages).map(pageKey => {
-          const { component, path, exact } = pages[pageKey];
+          const { component, path, exact } = pages[pageKey]
 
           const routeProps = {
             component,
             path,
             exact
-          };
+          }
 
-          return <Route key={path} {...routeProps} />;
+          return <Route key={path} {...routeProps} />
         })}
       </Switch>
     </Fragment>
   </BrowserRouter>
-);
+)
 
-ReactDOM.render(<App />, document.getElementById("mount"));
+ReactDOM.render(<App />, document.getElementById('mount'))

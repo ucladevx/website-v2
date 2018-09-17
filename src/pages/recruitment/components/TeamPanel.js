@@ -1,11 +1,11 @@
-import React from "react";
-import backend from "images/backend-dev.svg";
-import frontend from "images/frontend-dev.svg";
-import mobile from "images/mobile-dev.svg";
-import designer from "images/designer.svg";
-import marketing from "images/marketing.svg";
-import data from "images/data.svg";
-import { Pill } from "../../../lib";
+import React from 'react'
+import backend from 'images/backend-dev.svg'
+import frontend from 'images/frontend-dev.svg'
+import mobile from 'images/mobile-dev.svg'
+import designer from 'images/designer.svg'
+import marketing from 'images/marketing.svg'
+import data from 'images/data.svg'
+import { Pill } from '../../../lib'
 
 const TeamPanel = () => {
   return (
@@ -28,7 +28,7 @@ const TeamPanel = () => {
               Concerned with evolving a product’s business logic into robust
               backend services often in the form of developing APIs and
               designing database schema. Popular technologies include Node.js,
-              Python, Go.{" "}
+              Python, Go.{' '}
             </p>
           </div>
           <div className="role">
@@ -47,7 +47,7 @@ const TeamPanel = () => {
             <p>
               Passionate about mobile platforms including iOS, Android and React
               Native. Will integrate APIs and translate design prototypes into
-              code to create functional, native mobile applications.{" "}
+              code to create functional, native mobile applications.{' '}
             </p>
           </div>
           <div className="role">
@@ -78,7 +78,7 @@ const TeamPanel = () => {
               This role and its expectations will vary depending on the data
               infrastructure in place in a product. Expected to generate
               consumable insights from raw data based on which team will
-              reevaluate product strategy. Could use Python, R, Tableau, d3.js{" "}
+              reevaluate product strategy. Could use Python, R, Tableau, d3.js{' '}
             </p>
           </div>
         </div>
@@ -112,7 +112,7 @@ const TeamPanel = () => {
                 <p>
                   We will holistically evaluate applicants, looking for
                   experience and passion. Following this, some of you will
-                  receive invites to Recruiting Night.{" "}
+                  receive invites to Recruiting Night.{' '}
                 </p>
               </div>
             </div>
@@ -141,7 +141,7 @@ const TeamPanel = () => {
                 <h3 className="name">Final Decision</h3>
                 <p>
                   PMs will send out emails formally welcoming successful
-                  applicants. Welcome!{" "}
+                  applicants. Welcome!{' '}
                 </p>
               </div>
             </div>
@@ -149,7 +149,7 @@ const TeamPanel = () => {
         </div>
       </section>
     </div>
-  );
-};
+  )
+}
 
-export default TeamPanel;
+export default TeamPanel
