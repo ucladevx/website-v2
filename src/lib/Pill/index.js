@@ -1,8 +1,8 @@
-import React from "react";
-import classnames from "classnames";
+import React from 'react'
+import classnames from 'classnames'
 
 const Pill = ({ children }) => {
-  return React.Children.map(children, c => <div className="lib_pill">{c}</div>);
-};
+  return React.Children.map(children, c => <div className="lib_pill">{c}</div>)
+}
 
-export default Pill;
+export default Pill

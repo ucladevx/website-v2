@@ -1,13 +1,13 @@
-import React from "react";
-import { NavLink } from "react-router-dom";
-import Config from "../config";
-import { Row, RowItem } from "../lib";
-import Link from "./Link";
-import logo from "images/logo.svg";
+import React from 'react'
+import { NavLink } from 'react-router-dom'
+import Config from '../config'
+import { Row, RowItem } from '../lib'
+import Link from './Link'
+import logo from 'images/logo.svg'
 
 const links = Config.links.map(link => {
-  return <Link to={"/" + link}>{link}</Link>;
-});
+  return <Link to={link.path}>{link.label}</Link>
+})
 
 const Navbar = () => {
   return (
@@ -19,7 +19,7 @@ const Navbar = () => {
         <Row>{links}</Row>
       </Row>
     </div>
-  );
-};
+  )
+}
 
-export default Navbar;
+export default Navbar

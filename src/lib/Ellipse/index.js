@@ -1,5 +1,5 @@
-import React from "react";
+import React from 'react'
 
-const Ellipse = () => <div className="lib_ellipse" />;
+const Ellipse = () => <div className="lib_ellipse" />
 
-export default Ellipse;
+export default Ellipse

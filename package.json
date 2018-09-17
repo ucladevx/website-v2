@@ -7,7 +7,8 @@
   "scripts": {
     "build": "webpack --mode production",
     "start": "webpack-dev-server --mode development",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "pretty": "prettier --write '**/*.js'"
   },
   "author": "",
   "license": "ISC",
@@ -15,6 +16,10 @@
     "hooks": {
       "pre-commit": "lint-staged"
     }
+  },
+  "prettier": {
+    "semi": false,
+    "singleQuote": true
   },
   "lint-staged": {
     "*.{js,json,css,md}": [

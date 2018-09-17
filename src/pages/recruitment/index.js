@@ -1,6 +1,6 @@
-import React from "react";
-import { Pill } from "../../lib";
-import TeamPanel from "./components/TeamPanel";
+import React from 'react'
+import { Pill } from '../../lib'
+import TeamPanel from './components/TeamPanel'
 
 const Recruitment = () => (
   <div className="recruitment-container">
@@ -14,6 +14,6 @@ const Recruitment = () => (
       <TeamPanel />
     </div>
   </div>
-);
+)
 
-export default Recruitment;
+export default Recruitment
