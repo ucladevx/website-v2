@@ -34,20 +34,35 @@
 }
 
 .lib_pill {
-  padding: 10px 16px;
   display: inline-flex;
+  flex-flow: row;
   cursor: pointer;
+  letter-spacing: 3px;
+  border-radius: 21.5px;
+  overflow: hidden;
 
-  &:first-of-type {
-    border-radius: 21.5px 0 0 21.5px;
+  &.yellow {
+    border: 2px solid $yellow;
   }
+}
 
-  &:last-of-type {
-    border-radius: 0 21.5px 21.5px 0;
+.lib_pill-item {
+  padding: 12px 20px;
+
+  &.yellow {
+    color: $yellow;
+
+    &.fill {
+      background-color: $yellow;
+      color: $background;
+    }
   }
+  &.white {
+    color: $background;
 
-  &:only-of-type {
-    border-radius: 21.5px;
+    &.fill {
+      background-color: $white;
+    }
   }
 }
 

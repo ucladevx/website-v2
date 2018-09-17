@@ -1,18 +1,14 @@
 import React from 'react'
 import { withRouter } from 'react-router-dom'
-import { Pill } from '../../lib'
+import { Pill, PillItem } from '../../lib'
 
 const JoinUs = withRouter(({ history }) => {
   return (
-    <div
-      onClick={() => {
-        history.push('/recruitment')
-      }}
-    >
-      <Pill fill white>
+    <Pill outline="white">
+      <PillItem fill color="white" onClick={() => history.push('/recruitment')}>
         JOIN US
-      </Pill>
-    </div>
+      </PillItem>
+    </Pill>
   )
 })
 

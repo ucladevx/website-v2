@@ -1,8 +1,9 @@
 import React from 'react'
 import classnames from 'classnames'
 
-const Pill = ({ children }) => {
-  return React.Children.map(children, c => <div className="lib_pill">{c}</div>)
+const Pill = ({ children, outline }) => {
+  const className = classnames('lib_pill', outline)
+  return <div className={className}>{children}</div>
 }
 
 export default Pill
