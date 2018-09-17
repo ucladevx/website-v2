@@ -1,5 +1,13 @@
 const recruitment = {
-  pm: {},
+  pm: [
+    {
+      step: '1',
+      name: 'Application Release',
+      description:
+        'Tell us about your experience and interest in product development at <insert airtable link>. We’ll be looking for your resume and portfolio.'
+    },
+    {}
+  ],
   team: [
     {
       step: '1',
