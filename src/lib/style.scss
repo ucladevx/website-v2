@@ -49,7 +49,9 @@
   display: flex;
 
   & > * {
-    width: 50%;
+    @include lg {
+      width: 50%;
+    }
   }
 
   &.left {

@@ -5,9 +5,6 @@ import logo from 'images/logo.svg'
 const Home = () => (
   <div className="home-container">
     <div className="heading">
-      <div className="ellipse-container">
-        <Ellipse />
-      </div>
       <div className="content">
         <Col>
           <img src={logo} />
