@@ -7,6 +7,7 @@
   "scripts": {
     "build": "webpack --mode production",
     "start": "webpack-dev-server --mode development",
+    "format": "prettier-eslint --write \"src/**/*.js\"",
     "test": "echo \"Error: no test specified\" && exit 1",
     "pretty": "prettier --write '**/*.js'"
   },
@@ -42,6 +43,7 @@
     "mini-css-extract-plugin": "^0.4.2",
     "node-sass": "^4.9.3",
     "prettier": "1.14.2",
+    "prettier-eslint-cli": "^4.7.1",
     "sass-loader": "^7.1.0",
     "style-loader": "^0.23.0",
     "webpack": "^4.19.0",

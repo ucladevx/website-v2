@@ -3,13 +3,14 @@ const recruitment = {
     {
       step: '1',
       name: 'Submit Online Application',
-      description: `Tell us about your interests and how you think you can contribute to DevX. We’ll be looking for your resume and portfolio (if applicable).`
+      description:
+        'Tell us about your experience and interest in product development. We’ll be looking for your resume and portfolio.'
     },
     {
       step: '2',
       name: 'Board Review',
       description:
-        'We will holistically evaluate applicants, looking for experience and passion. Following this, some of you will receive invites to Recruiting Night.'
+        'We will holistically evaluate applicants, looking for experience and passion. Following this, some of you will receive an invite for an interview.'
     },
     {
       step: '3',
