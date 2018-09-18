@@ -15,4 +15,8 @@
   a {
     text-decoration: inherit;
   }
+
+  @include md {
+    padding: 20px 140px;
+  }
 }
