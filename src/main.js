@@ -2,14 +2,15 @@ import './main.scss'
 import React from 'react'
 import { Fragment } from 'react'
 import ReactDOM from 'react-dom'
-import { BrowserRouter, Route, Switch } from 'react-router-dom'
+import { HashRouter, Route, Switch, Redirect } from 'react-router-dom'
 
-import Navbar from './navbar'
+import GA from './analytics/google-analytics'
 import pages from './pages'
 
 const App = () => (
-  <BrowserRouter>
+  <HashRouter>
     <Fragment>
+      {GA.init() && <GA.RouteTracker />}
       <Navbar />
       <Switch>
         {Object.keys(pages).map(pageKey => {
@@ -26,7 +27,7 @@ const App = () => (
         <Redirect to="/" />
       </Switch>
     </Fragment>
-  </BrowserRouter>
+  </HashRouter>
 )
 
 ReactDOM.render(<App />, document.getElementById('mount'))
