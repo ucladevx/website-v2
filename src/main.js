@@ -2,32 +2,41 @@ import './main.scss'
 import React from 'react'
 import { Fragment } from 'react'
 import ReactDOM from 'react-dom'
+import ReactGA from 'react-ga'
 import { HashRouter, Route, Switch, Redirect } from 'react-router-dom'
+import Config from './config'
 
 import GA from './analytics/google-analytics'
+import Navbar from './navbar'
 import pages from './pages'
 
-const App = () => (
-  <HashRouter>
-    <Fragment>
-      {GA.init() && <GA.RouteTracker />}
-      <Navbar />
-      <Switch>
-        {Object.keys(pages).map(pageKey => {
-          const { component, path, exact } = pages[pageKey]
+GA.init()
 
-          const routeProps = {
-            component,
-            path,
-            exact
-          }
+class App extends React.Component {
+  render() {
+    return (
+      <HashRouter>
+        <Fragment>
+          <GA.RouteTracker />
+          <Navbar />
+          <Switch>
+            {Object.keys(pages).map(pageKey => {
+              const { component, path, exact } = pages[pageKey]
 
-          return <Route key={path} {...routeProps} />
-        })}
-        <Redirect to="/" />
-      </Switch>
-    </Fragment>
-  </HashRouter>
-)
+              const routeProps = {
+                component,
+                path,
+                exact
+              }
+
+              return <Route key={path} {...routeProps} />
+            })}
+            <Redirect to="/" />
+          </Switch>
+        </Fragment>
+      </HashRouter>
+    )
+  }
+}
 
 ReactDOM.render(<App />, document.getElementById('mount'))
