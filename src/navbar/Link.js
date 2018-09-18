@@ -4,7 +4,7 @@ import { NavLink } from 'react-router-dom'
 
 const Link = ({ children, to }) => {
   return (
-    <RowItem style={{ margin: '0 10px' }}>
+    <RowItem className="link-item">
       <NavLink to={to} exact activeStyle={{ color: '#F8CC29' }}>
         {children}
       </NavLink>
