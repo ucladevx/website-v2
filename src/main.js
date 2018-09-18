@@ -23,6 +23,7 @@ const App = () => (
 
           return <Route key={path} {...routeProps} />
         })}
+        <Redirect to="/" />
       </Switch>
     </Fragment>
   </BrowserRouter>
