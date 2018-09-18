@@ -13,6 +13,17 @@ const RecruitmentSection = ({ type }) => {
       : 'https://airtable.com/shr6GrXQNNb0588WY'
   return (
     <section>
+      <a href={applink} target="_blank">
+        <Pill outline="yellow">
+          <PillItem color="yellow" fill>
+            Application
+          </PillItem>
+        </Pill>
+      </a>
+      <br />
+      <br />
+      <br />
+      <br />
       <h2>Recruitment Process</h2>
       <br />
       <div className="grid">
@@ -34,17 +45,7 @@ const RecruitmentSection = ({ type }) => {
           )
         })}
       </div>
-      <a href={applink} target="_blank">
-        <Pill outline="yellow">
-          <PillItem color="yellow" fill>
-            Application
-          </PillItem>
-        </Pill>
-      </a>
-      <br />
-      <br />
-      <br />
-      <br />
+
       <h2>Fall 2018 Recruitment Dates</h2>
       <br />
       <div className="grid">

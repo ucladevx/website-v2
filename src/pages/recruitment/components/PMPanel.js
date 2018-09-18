@@ -33,7 +33,6 @@ const PMPanel = () => {
         </div>
         <br />
         <br />
-        <br />
       </section>
       <RecruitmentSection type="pm" />
     </div>
