@@ -1,11 +1,16 @@
 import React from 'react'
 
+import { Pill, PillItem } from '../../../lib'
 import DATES from '../config/dates'
 import RECRUITMENT from '../config/recruitment'
 
 const RecruitmentSection = ({ type }) => {
   const dates = DATES[type]
   const recruitment = RECRUITMENT[type]
+  const applink =
+    type === 'pm'
+      ? 'https://airtable.com/shrG014f4mEIaQr1g'
+      : 'https://airtable.com/shr6GrXQNNb0588WY'
   return (
     <section>
       <h2>Recruitment Process</h2>
@@ -29,6 +34,17 @@ const RecruitmentSection = ({ type }) => {
           )
         })}
       </div>
+      <a href={applink} target="_blank">
+        <Pill outline="yellow">
+          <PillItem color="yellow" fill>
+            Application
+          </PillItem>
+        </Pill>
+      </a>
+      <br />
+      <br />
+      <br />
+      <br />
       <h2>Fall 2018 Recruitment Dates</h2>
       <br />
       <div className="grid">

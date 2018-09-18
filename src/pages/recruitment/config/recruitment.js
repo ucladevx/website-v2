@@ -3,8 +3,7 @@ const recruitment = {
     {
       step: '1',
       name: 'Submit Online Application',
-      description:
-        'Tell us about your interests and how you think you can contribute to DevX at TODO ADD LINK. We’ll be looking for your resume and portfolio (if applicable).'
+      description: `Tell us about your interests and how you think you can contribute to DevX. We’ll be looking for your resume and portfolio (if applicable).`
     },
     {
       step: '2',
@@ -30,7 +29,7 @@ const recruitment = {
       step: '1',
       name: 'Submit Online Application',
       description:
-        'Tell us about your interests and how you think you can contribute to DevX at TODO ADD LINK. We’ll be looking for your resume and portfolio (if applicable).'
+        'Tell us about your interests and how you think you can contribute to DevX. We’ll be looking for your resume and portfolio (if applicable).'
     },
     {
       step: '2',
