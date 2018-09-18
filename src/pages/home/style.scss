@@ -17,6 +17,10 @@
       }
     }
 
+    img {
+      height: 60px;
+    }
+
     @include md {
       position: absolute;
       bottom: 100px;
