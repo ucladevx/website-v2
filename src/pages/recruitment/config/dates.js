@@ -2,7 +2,7 @@ const dates = {
   pm: [
     {
       name: 'Application Release',
-      date: 'September 24 (Monday of Week 0)'
+      date: 'September 17'
     },
     {
       name: 'Application Deadline',
@@ -16,7 +16,7 @@ const dates = {
   team: [
     {
       name: 'Application Release',
-      date: 'September 24 (Monday of Week 0)'
+      date: 'September 17'
     },
     {
       name: 'Application Deadline',
