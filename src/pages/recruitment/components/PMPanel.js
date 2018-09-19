@@ -12,7 +12,7 @@ const PMPanel = () => {
         <br />
         <div className="jumbo">
           <div className="text-container">
-            <h3>
+            <h5>
               PMs are primarily engaged with product vision, strategy and
               management. They may be hands-on developers or designers too, but
               their prime concern is designing new, innovative product features
@@ -20,12 +20,12 @@ const PMPanel = () => {
               specific implementations of these ideas would then be delegated to
               team members. They also typically organize the sprint and
               deployment schedules as well as the overarching roadmap.
-            </h3>
+            </h5>
             <br />
-            <h3>
+            <h5>
               If you’re excited at the prospect of converting your own cool idea
               into a robust product, apply to be PM and we’ll be in touch!
-            </h3>
+            </h5>
           </div>
           <div className="img-container">
             <img src={pm} />

@@ -15,7 +15,7 @@ GA.init()
 class App extends React.Component {
   render() {
     return (
-      <HashRouter>
+      <HashRouter onUpdate={() => window.scrollTo(0, 0)}>
         <Fragment>
           <GA.RouteTracker />
           <Navbar />

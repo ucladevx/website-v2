@@ -10,10 +10,10 @@ const TeamPanel = () => {
         <h2>Team Roles</h2>
         <br />
         <br />
-        <h3>
+        <h5>
           We know product development is a holistic process so we offer a range
           of roles below for inspiration, but feel free to craft your own:
-        </h3>
+        </h5>
         <br />
         <br />
         <div className="grid">
