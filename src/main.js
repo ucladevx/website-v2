@@ -9,6 +9,7 @@ import Config from './config'
 import GA from './analytics/google-analytics'
 import Navbar from './navbar'
 import pages from './pages'
+import AppContainer from './pages/App'
 
 GA.init()
 
@@ -16,7 +17,7 @@ class App extends React.Component {
   render() {
     return (
       <HashRouter onUpdate={() => window.scrollTo(0, 0)}>
-        <Fragment>
+        <AppContainer>
           <GA.RouteTracker />
           <Navbar />
           <Switch>
@@ -33,7 +34,7 @@ class App extends React.Component {
             })}
             <Redirect to="/" />
           </Switch>
-        </Fragment>
+        </AppContainer>
       </HashRouter>
     )
   }
