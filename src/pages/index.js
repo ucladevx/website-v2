@@ -1,5 +1,6 @@
 import Home from './home'
 import Recruitment from './recruitment'
+import Projects from './projects'
 
 const pageRoutes = {
   home: {
@@ -10,6 +11,11 @@ const pageRoutes = {
   recruitment: {
     component: Recruitment,
     path: '/recruitment',
+    exact: true
+  },
+  projects: {
+    component: Projects,
+    path: '/projects',
     exact: true
   }
 }

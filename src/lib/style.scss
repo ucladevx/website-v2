@@ -115,3 +115,14 @@
     padding: 140px;
   }
 }
+
+.lib_container {
+  padding: 10px 40px 40px 40px;
+  background-color: $background;
+  min-height: 100vh;
+  color: $white;
+
+  @include md {
+    padding: 40px 140px 140px 140px;
+  }
+}

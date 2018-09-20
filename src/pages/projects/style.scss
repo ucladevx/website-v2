@@ -1,0 +1,30 @@
+.projects_panel {
+  border-bottom: 1px solid $white;
+  display: flex;
+  flex-flow: column;
+
+  .project_image {
+    padding: 20px;
+
+    img {
+      object-fit: contain;
+      height: 100%;
+      width: 100%;
+    }
+  }
+
+  .projects_text {
+    margin: 20px 0;
+    text-align: justify;
+    white-space: pre-line;
+
+    h1 {
+      color: $yellow;
+      text-align: center;
+    }
+  }
+
+  @include md {
+    flex-flow: row;
+  }
+}

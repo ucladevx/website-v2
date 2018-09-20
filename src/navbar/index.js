@@ -15,13 +15,15 @@ const links = Config.links.map(link => {
 
 const Navbar = () => {
   return (
-    <div className="navbar">
-      <Row maxHeight spaceBetween>
-        <RowItem>
-          <img src={logo} alt="logo" />
-        </RowItem>
-        <Row>{links}</Row>
-      </Row>
+    <div className="navbar-container">
+      <div className="navbar">
+        <Row maxHeight spaceBetween>
+          <RowItem>
+            <img src={logo} alt="logo" />
+          </RowItem>
+          <Row>{links}</Row>
+        </Row>
+      </div>
     </div>
   )
 }
