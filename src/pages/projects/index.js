@@ -1,12 +1,12 @@
 import React from 'react'
-import { Container } from '../../lib'
+import { Container, ContainerBody } from '../../lib'
 import Config from '../../config'
 import Panel from './components/Panel'
 import Image from './components/Image'
 import Text from './components/Text'
 
-const Projects = () => {
-  const panels = Config.products.map(product => {
+const Projects = ({ match }) => {
+  const panels = Config.products[match.params.year].map(product => {
     return (
       <Panel>
         <Image path={product.image} />
@@ -17,7 +17,11 @@ const Projects = () => {
       </Panel>
     )
   })
-  return <Container>{panels}</Container>
+  return (
+    <Container>
+      <ContainerBody>{panels}</ContainerBody>
+    </Container>
+  )
 }
 
 export default Projects

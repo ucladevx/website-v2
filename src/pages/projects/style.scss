@@ -11,6 +11,10 @@
       height: 100%;
       width: 100%;
     }
+
+    @include md {
+      flex: 1;
+    }
   }
 
   .projects_text {
@@ -21,10 +25,25 @@
     h1 {
       color: $yellow;
       text-align: center;
+
+      @include md {
+        text-align: left;
+      }
+    }
+
+    @include md {
+      flex: 2;
+      margin: auto;
+      padding: 20px;
     }
   }
 
   @include md {
     flex-flow: row;
+    border-bottom: none;
+
+    &:nth-of-type(2n) {
+      flex-flow: row-reverse;
+    }
   }
 }
