@@ -1,7 +1,7 @@
 $base-font: 'Raleway';
-$background: #03022D;
+$background: #03022d;
 $white: #fff;
-$yellow: #F8CC29;
+$yellow: #f8cc29;
 
 // Small tablets and large smartphones (landscape view)
 $screen-sm-min: 576px;
@@ -16,34 +16,34 @@ $screen-lg-min: 992px;
 $screen-xl-min: 1200px;
 
 @mixin xs {
-    @media (min-width: 0) {
-        @content;
-    }
+  @media (min-width: 0) {
+    @content;
+  }
 }
 
 @mixin sm {
-   @media (min-width: #{$screen-sm-min}) {
-       @content;
-   }
+  @media (min-width: #{$screen-sm-min}) {
+    @content;
+  }
 }
 
 // Medium devices
 @mixin md {
-   @media (min-width: #{$screen-md-min}) {
-       @content;
-   }
+  @media (min-width: #{$screen-md-min}) {
+    @content;
+  }
 }
 
 // Large devices
 @mixin lg {
-   @media (min-width: #{$screen-lg-min}) {
-       @content;
-   }
+  @media (min-width: #{$screen-lg-min}) {
+    @content;
+  }
 }
 
 // Extra large devices
 @mixin xl {
-   @media (min-width: #{$screen-xl-min}) {
-       @content;
-   }
+  @media (min-width: #{$screen-xl-min}) {
+    @content;
+  }
 }
