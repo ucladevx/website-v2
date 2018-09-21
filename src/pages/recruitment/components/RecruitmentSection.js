@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 
 import { Pill, PillItem } from '../../../lib'
 import DATES from '../config/dates'
@@ -13,7 +14,7 @@ const RecruitmentSection = ({ type }) => {
       : 'https://airtable.com/shr6GrXQNNb0588WY'
   return (
     <section>
-      <a href={applink} target="_blank">
+      <a href={applink} target="_blank" rel="noopener noreferrer">
         <Pill outline="yellow">
           <PillItem color="yellow" fill>
             Application
@@ -62,6 +63,10 @@ const RecruitmentSection = ({ type }) => {
       </div>
     </section>
   )
+}
+
+RecruitmentSection.propTypes = {
+  type: PropTypes.bool.isRequired
 }
 
 export default RecruitmentSection
