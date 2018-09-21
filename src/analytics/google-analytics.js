@@ -6,7 +6,10 @@ import Config from '../config'
 
 class GoogleAnalytics extends React.Component {
   componentDidMount() {
-    this.logPageChange(this.props.location.pathname, this.props.location.search)
+    const {
+      location: { pathname, search }
+    } = this.props
+    this.logPageChange(pathname, search)
   }
 
   componentDidUpdate({ location: prevLocation }) {
@@ -26,8 +29,7 @@ class GoogleAnalytics extends React.Component {
     const { location } = window
     ReactGA.set({
       page,
-      location: `${location.origin}${page}`,
-      ...this.props.options
+      location: `${location.origin}${page}`
     })
     ReactGA.pageview(page)
   }
@@ -41,14 +43,13 @@ GoogleAnalytics.propTypes = {
   location: PropTypes.shape({
     pathname: PropTypes.string,
     search: PropTypes.string
-  }).isRequired,
-  options: PropTypes.object
+  }).isRequired
 }
 
 const RouteTracker = () => <Route component={GoogleAnalytics} />
 
-const init = options => {
-  options = options || Config.gaTracking.options
+const init = () => {
+  const { options } = Config.gaTracking
   const { trackingId } = Config.gaTracking
   const isGAEnabled = !!trackingId
 

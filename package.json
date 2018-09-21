@@ -18,12 +18,8 @@
       "pre-commit": "lint-staged"
     }
   },
-  "prettier": {
-    "semi": false,
-    "singleQuote": true
-  },
   "lint-staged": {
-    "src/**/*.{js,jsx,json,css,md}": ["eslint --fix src", "git add"]
+    "src/**/*.{js,json,css,md}": ["eslint --fix", "git add"]
   },
   "devDependencies": {
     "@babel/core": "^7.0.1",
