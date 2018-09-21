@@ -7,7 +7,8 @@ import Image from './components/Image'
 import Text from './components/Text'
 
 const Projects = ({ match }) => {
-  const panels = Config.products[match.params.year].map(product => (
+  const { year } = match.params
+  const panels = Config.products[year].map(product => (
     <Panel>
       <Image path={product.image} />
       <Text>
