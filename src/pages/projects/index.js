@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import { Container, ContainerBody } from '../../lib'
 import Config from '../../config'
 import Panel from './components/Panel'
@@ -20,6 +21,14 @@ const Projects = ({ match }) => {
       <ContainerBody>{panels}</ContainerBody>
     </Container>
   )
+}
+
+Projects.propTypes = {
+  match: PropTypes.shape({
+    params: PropTypes.shape({
+      year: PropTypes.string.isRequired
+    }).isRequired
+  }).isRequired
 }
 
 export default Projects
