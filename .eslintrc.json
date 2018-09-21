@@ -15,5 +15,15 @@
         "extensions": [".js", ".jsx"]
       }
     ]
+  },
+  "settings": {
+    "import/resolver": {
+      "alias": {
+        "map": [
+          ["assets", "./assets"],
+          ["images", "./assets/images"]
+        ]
+      }
+    }
   }
 }
