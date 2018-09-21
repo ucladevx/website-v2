@@ -8,10 +8,10 @@ import Text from './components/Text'
 
 const Projects = ({ match }) => {
   const { year } = match.params
-  const panels = Config.products[year].map(product => (
+  const panels = Config.products[year].map((product, idx) => (
     <Panel>
       <Image path={product.image} />
-      <Text>
+      <Text left={idx % 2 === 1}>
         <h1>{product.name}</h1>
         <h5>{product.description}</h5>
       </Text>
