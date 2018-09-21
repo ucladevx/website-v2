@@ -8,6 +8,7 @@ import Config from './config'
 
 import GA from './analytics/google-analytics'
 import Navbar from './navbar'
+import HamburgerMenu from './hamburger'
 import pages from './pages'
 import AppContainer from './pages/App'
 
@@ -19,6 +20,7 @@ class App extends React.Component {
       <HashRouter onUpdate={() => window.scrollTo(0, 0)}>
         <AppContainer>
           <GA.RouteTracker />
+          <HamburgerMenu />
           <Navbar />
           <Switch>
             {Object.keys(pages).map(pageKey => {

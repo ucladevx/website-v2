@@ -1,23 +1,10 @@
-.recruitment-container {
-    background: $background;
-    color: $white;
-
-    // responsive "margins"
-    padding: 80px 50px;
-    @include sm {
-        padding: 80px;
-    }
-    @include lg {
-        padding: 80px 139px;
-    }
-
-    .heading {
+    .recruitment_heading {
         padding: 20px 0;
         left: 139px;
         z-index: 2;
     }
 
-    .content {
+    .recruitment_content {
         .panel {
             margin: 20px 0;
 
@@ -134,4 +121,3 @@
             }
         }
     }
-}
