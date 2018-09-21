@@ -7,7 +7,7 @@ const Hamburger = () => {
   return (
     <Popup
       modal
-      closeOnDocument={false}
+      closeOnDocumentClick={false}
       trigger={open => <BurgerIcon open={open} />}
     >
       {close => <Menu close={close} />}

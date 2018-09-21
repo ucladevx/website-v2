@@ -9,7 +9,7 @@
     z-index: 1;
 
     @include md {
-      height: calc(100% - 80px);
+      height: calc(100vh - 80px);
     }
   }
   .content {

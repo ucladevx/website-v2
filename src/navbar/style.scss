@@ -1,7 +1,6 @@
 .navbar-container {
   height: 80px;
   width: 100%;
-  display: none;
 
   .navbar {
     padding: 20px;
@@ -25,6 +24,11 @@
 
     .link-item {
       margin-left: 10px;
+      display: none;
+
+      @include md {
+       display: block
+      }
     }
 
     @include md {
@@ -34,9 +38,5 @@
         margin-left: 56px;
       }
     }
-  }
-
-  @include md {
-    display: block;
   }
 }
