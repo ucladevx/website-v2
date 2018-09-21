@@ -6,17 +6,25 @@
   align-items: center;
 
   .project_image {
-    padding: 20px;
-    min-height: 150px;
-    display: flex;
-    flex-flow: column;
-    justify-content: center;
+    background-color: $white;
+    margin: auto;
+    text-align: center;
+    width: 100%;
+    border: 30px solid $white;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    &:before {
+      content:'';
+      padding:50% 0;/* vertical value as  100% equals width */
+      display:inline-block;
+      vertical-align:middle;
+    }
 
     img {
-      object-fit: contain;
-      height: 100%;
-      width: 100%;
-      max-width: 300px;
+      max-height: 100%;
+      max-width: 100%;
     }
 
     @include md {
