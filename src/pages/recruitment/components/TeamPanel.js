@@ -19,11 +19,11 @@ const TeamPanel = () => (
         {roles.team.map(r => {
           const { name, icon, description } = r
 
-          const Img = require(`images/${icon}`)
+          const Img = require(`images/${icon}`)  // eslint-disable-line
 
           return (
             <div key={name} className="role">
-              <img src={Img} className="icon" />
+              <img src={Img} className="icon" alt={name} />
               <h3 className="name">{name}</h3>
               <p>{description}</p>
             </div>

@@ -8,7 +8,7 @@
     "build": "webpack --mode production",
     "start": "webpack-dev-server --mode development",
     "format": "prettier-eslint --write \"src/**/*.{js,scss}\"",
-    "pretty": "prettier --write '**/*.{js,scss}'",
+    "lint": "eslint --fix src",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
