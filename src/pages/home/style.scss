@@ -5,12 +5,8 @@
     align-items: center;
     background: $background;
     color: $white;
-    height: 100vh;
     z-index: 1;
-
-    @include md {
-      height: calc(100vh - 80px);
-    }
+    height: calc(100vh - 80px);
   }
   .content {
     .lib_col {
