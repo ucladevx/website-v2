@@ -1,4 +1,5 @@
 .projects_panel {
+  padding: 10px;
   border-bottom: 1px solid $white;
   display: flex;
   flex-flow: column;
@@ -6,6 +7,10 @@
 
   .project_image {
     padding: 20px;
+    min-height: 150px;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
 
     img {
       object-fit: contain;
@@ -38,11 +43,11 @@
       margin: auto;
       margin-left: 20px;
       padding: 20px;
-    }
 
-    &:nth-of-type(2n) {
-      margin: auto;
-      margin-right: 20px;
+      &:nth-of-type(2n) {
+        margin: auto;
+        margin-right: 20px;
+      }
     }
   }
 
