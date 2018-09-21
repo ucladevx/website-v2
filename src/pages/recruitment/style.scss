@@ -13,7 +13,6 @@
       flex-direction: row;
       flex-wrap: wrap;
       justify-content: space-between;
-      margin: 40px 0;
     }
 
     .name {
@@ -88,6 +87,11 @@
     flex-direction: row;
     flex-wrap: wrap-reverse;
     justify-content: space-between;
+    margin-bottom: 20px;
+
+    @include xl {
+      margin-bottom: 0;
+    }
 
     .text-container {
       @include xs {
@@ -115,7 +119,7 @@
 
         img {
           height: auto;
-          margin-bottom: 50px;
+          margin-bottom: 0;
         }
       }
     }

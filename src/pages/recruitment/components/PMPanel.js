@@ -30,8 +30,6 @@ const PMPanel = () => (
           <img src={pm} />
         </div>
       </div>
-      <br />
-      <br />
     </section>
     <RecruitmentSection type="pm" />
   </div>

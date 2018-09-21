@@ -13,9 +13,9 @@ class Recruitment extends React.Component {
   }
 
   onPillClick = role => {
-    this.setState(prevState => ({
+    this.setState({
       role
-    }))
+    })
   }
 
   render() {
