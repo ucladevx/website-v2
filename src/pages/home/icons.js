@@ -1,10 +1,10 @@
 import React from 'react'
-import Config from '../../config'
 import { Row, RowItem } from 'lib'
+import Config from '../../config'
 
 const Icons = () => {
   const icons = Config.icons.map(icon => {
-    const Img = require('images/' + icon.path)
+    const Img = require(`images/${icon.path}`)
     return (
       <RowItem key={icon.path}>
         <a target="_blank" href={icon.url}>

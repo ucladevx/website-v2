@@ -1,8 +1,8 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import { Col, Pill, Ellipse, Section } from '../../lib'
 import logo from 'images/logo.svg'
 import sponsorship from 'assets/sponsorship_brochure.pdf'
+import { Col, Pill, Ellipse, Section } from '../../lib'
 import Icons from './icons'
 import JoinUs from './joinUs'
 

@@ -3,16 +3,14 @@ import Popup from 'reactjs-popup'
 import Menu from './Menu'
 import BurgerIcon from './BurgerIcon'
 
-const Hamburger = () => {
-  return (
-    <Popup
-      modal
-      closeOnDocumentClick={false}
-      trigger={open => <BurgerIcon open={open} />}
-    >
-      {close => <Menu close={close} />}
-    </Popup>
-  )
-}
+const Hamburger = () => (
+  <Popup
+    modal
+    closeOnDocumentClick={false}
+    trigger={open => <BurgerIcon open={open} />}
+  >
+    {close => <Menu close={close} />}
+  </Popup>
+)
 
 export default Hamburger

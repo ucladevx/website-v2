@@ -1,15 +1,13 @@
 import React from 'react'
-import { RowItem } from '../lib'
 import { NavLink } from 'react-router-dom'
+import { RowItem } from '../lib'
 
-const Link = ({ children, to }) => {
-  return (
-    <RowItem className="link-item">
-      <NavLink to={to} exact activeStyle={{ color: '#F8CC29' }}>
-        {children}
-      </NavLink>
-    </RowItem>
-  )
-}
+const Link = ({ children, to }) => (
+  <RowItem className="link-item">
+    <NavLink to={to} exact activeStyle={{ color: '#F8CC29' }}>
+      {children}
+    </NavLink>
+  </RowItem>
+)
 
 export default Link

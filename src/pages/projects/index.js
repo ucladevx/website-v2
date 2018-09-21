@@ -6,17 +6,15 @@ import Image from './components/Image'
 import Text from './components/Text'
 
 const Projects = ({ match }) => {
-  const panels = Config.products[match.params.year].map(product => {
-    return (
-      <Panel>
-        <Image path={product.image} />
-        <Text>
-          <h1>{product.name}</h1>
-          <h5>{product.description}</h5>
-        </Text>
-      </Panel>
-    )
-  })
+  const panels = Config.products[match.params.year].map(product => (
+    <Panel>
+      <Image path={product.image} />
+      <Text>
+        <h1>{product.name}</h1>
+        <h5>{product.description}</h5>
+      </Text>
+    </Panel>
+  ))
   return (
     <Container>
       <ContainerBody>{panels}</ContainerBody>
