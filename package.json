@@ -5,8 +5,8 @@
   "main": "index.js",
   "repository": "https://github.com/ucladevx/website-v2",
   "scripts": {
-    "build": "webpack --mode production",
-    "start": "webpack-dev-server --mode development",
+    "build": "webpack --mode=production --env.production",
+    "start": "webpack-dev-server --mode=development --env.development",
     "format": "prettier-eslint --write \"src/**/*.{js,scss}\"",
     "lint": "eslint --fix src",
     "test": "echo \"Error: no test specified\" && exit 1"
