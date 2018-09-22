@@ -66,7 +66,7 @@ const RecruitmentSection = ({ type }) => {
 }
 
 RecruitmentSection.propTypes = {
-  type: PropTypes.bool.isRequired
+  type: PropTypes.string.isRequired
 }
 
 export default RecruitmentSection
