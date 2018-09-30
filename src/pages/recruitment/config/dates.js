@@ -20,11 +20,11 @@ const dates = {
     },
     {
       name: 'Application Deadline',
-      date: 'October 7 (Sunday of Week 1)'
+      date: 'October 1 (Monday of Week 1)'
     },
     {
       name: 'Recruiting Night',
-      date: 'October 3 (Wednesday of Week 1)'
+      date: 'October 4 (Thursday of Week 1)'
     }
   ]
 }
