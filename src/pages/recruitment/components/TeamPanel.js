@@ -1,6 +1,6 @@
 import React from 'react'
 
-import roles from '../config/roles'
+import { roles } from '../../../config'
 import RecruitmentSection from './RecruitmentSection'
 
 const TeamPanel = () => (
@@ -19,11 +19,9 @@ const TeamPanel = () => (
         {roles.team.map(r => {
           const { name, icon, description } = r
 
-          const Img = require(`images/${icon}`)  // eslint-disable-line
-
           return (
             <div key={name} className="role">
-              <img src={Img} className="icon" alt={name} />
+              <img src={icon} className="icon" alt={name} />
               <h3 className="name">{name}</h3>
               <p>{description}</p>
             </div>

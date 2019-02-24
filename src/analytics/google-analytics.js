@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import ReactGA from 'react-ga'
 import { Route } from 'react-router-dom'
-import Config from '../config'
+import { analytics } from '../config'
 
 class GoogleAnalytics extends React.Component {
   componentDidMount() {
@@ -49,8 +49,8 @@ GoogleAnalytics.propTypes = {
 const RouteTracker = () => <Route component={GoogleAnalytics} />
 
 const init = () => {
-  const { options } = Config.gaTracking
-  const { trackingId } = Config.gaTracking
+  const { options } = analytics.gaTracking
+  const { trackingId } = analytics.gaTracking
   const isGAEnabled = !!trackingId
 
   if (isGAEnabled) {

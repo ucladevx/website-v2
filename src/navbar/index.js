@@ -1,15 +1,8 @@
 import React from 'react'
-import { NavLink } from 'react-router-dom'
-import logo from 'images/logo.svg'
-import Config from '../config'
+import logo from '../assets/images/logo.svg'
+import { links } from '../config'
 import { Row, RowItem } from '../lib'
 import Link from './Link'
-
-const links = Config.links.map(link => (
-  <Link key={link.path} to={link.path}>
-    {link.label}
-  </Link>
-))
 
 const Navbar = () => (
   <div className="navbar-container">
@@ -18,7 +11,13 @@ const Navbar = () => (
         <RowItem>
           <img src={logo} alt="logo" />
         </RowItem>
-        <Row>{links}</Row>
+        <Row>
+          {links.map(link => (
+            <Link key={link.path} to={link.path}>
+              {link.label}
+            </Link>
+          ))}
+        </Row>
       </Row>
     </div>
   </div>

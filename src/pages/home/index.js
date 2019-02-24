@@ -1,8 +1,8 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import logo from 'images/logo.svg'
-import sponsorship from 'assets/sponsorship_brochure.pdf'
-import { Col, Pill, Ellipse, Section } from '../../lib'
+import logo from '../../assets/images/logo.svg'
+import { sponsorship } from '../../config'
+import { Col, Section } from '../../lib'
 import Icons from './icons'
 import JoinUs from './joinUs'
 
@@ -11,7 +11,7 @@ const Home = () => (
     <div className="heading">
       <div className="content">
         <Col>
-          <img src={logo} />
+          <img alt="DevX logo" src={logo} />
           <h3>MOONSHOTS FOR UCLA</h3>
           <JoinUs />
         </Col>
@@ -44,9 +44,9 @@ const Home = () => (
             <br />
           </h5>
           <h5>
-            Every quarter we will develop solutions for the most popular
+            {`Every quarter we will develop solutions for the most popular
             initiatives by the community. Submit your own requests for problems
-            you're facing.
+            you're facing.`}
           </h5>
         </Col>
       </Section>
@@ -65,10 +65,14 @@ const Home = () => (
     <div className="footer-container">
       <Section middle blue small>
         <Col middle>
-          <img src={logo} className="logo" />
+          <img alt="DevX logo" src={logo} className="logo" />
           <h5>
             Want to help one of the most influential organizations at UCLA?{' '}
-            <a href={sponsorship} target="_blank">
+            <a
+              href={sponsorship.brochureLink}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               Sponsor Us
             </a>
             .

@@ -6,7 +6,8 @@
   "repository": "https://github.com/ucladevx/website-v2",
   "scripts": {
     "build": "webpack --mode=production --env.production",
-    "start": "webpack-dev-server --mode=development --env.development",
+    "start-old": "webpack-dev-server --mode=development --env.development",
+    "start": "parcel ./src/index.html",
     "format": "prettier-eslint --write \"src/**/*.{js,scss}\"",
     "lint": "eslint --fix src",
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -47,8 +48,11 @@
     "lint-staged": "^7.2.2",
     "mini-css-extract-plugin": "^0.4.2",
     "node-sass": "^4.9.3",
+    "parcel-bundler": "^1.11.0",
+    "parcel-plugin-static-files-copy": "^2.0.0",
     "prettier": "^1.14.2",
     "prettier-eslint-cli": "^4.7.1",
+    "sass": "^1.17.2",
     "sass-loader": "^7.1.0",
     "style-loader": "^0.23.0",
     "webpack": "^4.19.0",
@@ -56,12 +60,18 @@
     "webpack-dev-server": "^3.1.8"
   },
   "dependencies": {
+    "assets": "^3.0.1",
     "classnames": "^2.2.6",
+    "images": "^3.0.2",
     "prop-types": "^15.6.2",
     "react": "^16.5.1",
     "react-dom": "^16.5.1",
     "react-ga": "^2.5.3",
     "react-router-dom": "^4.3.1",
     "reactjs-popup": "^1.2.0"
+  },
+  "staticFiles": {
+    "staticPath": "static",
+    "watcherGlob": "**"
   }
 }

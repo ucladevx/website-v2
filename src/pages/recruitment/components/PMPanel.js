@@ -1,6 +1,6 @@
 import React from 'react'
 
-import pm from 'images/product-manager.svg'
+import pmIcon from '../../../assets/images/product-manager.svg'
 import RecruitmentSection from './RecruitmentSection'
 
 const PMPanel = () => (
@@ -27,7 +27,7 @@ const PMPanel = () => (
           </h5>
         </div>
         <div className="img-container">
-          <img src={pm} alt="pm-logo" />
+          <img src={pmIcon} alt="pm-logo" />
         </div>
       </div>
     </section>

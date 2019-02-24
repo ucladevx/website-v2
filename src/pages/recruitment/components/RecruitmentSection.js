@@ -2,19 +2,13 @@ import React from 'react'
 import PropTypes from 'prop-types'
 
 import { Pill, PillItem } from '../../../lib'
-import DATES from '../config/dates'
-import RECRUITMENT from '../config/recruitment'
+import { dates, recruitment } from '../../../config'
 
 const RecruitmentSection = ({ type }) => {
-  const dates = DATES[type]
-  const recruitment = RECRUITMENT[type]
-  const applink =
-    type === 'pm'
-      ? 'https://airtable.com/shrG014f4mEIaQr1g'
-      : 'https://airtable.com/shr6GrXQNNb0588WY'
+  const appLink = recruitment.applicationLinks[type]
   return (
     <section>
-      <a href={applink} target="_blank" rel="noopener noreferrer">
+      <a href={appLink} target="_blank" rel="noopener noreferrer">
         <Pill outline="yellow">
           <PillItem color="yellow" fill>
             Application
@@ -28,7 +22,7 @@ const RecruitmentSection = ({ type }) => {
       <h2>Recruitment Process</h2>
       <br />
       <div className="grid">
-        {recruitment.map(s => {
+        {recruitment[type].map(s => {
           const { step, name, description } = s
 
           return (
@@ -50,7 +44,7 @@ const RecruitmentSection = ({ type }) => {
       <h2>Fall 2018 Recruitment Dates</h2>
       <br />
       <div className="grid">
-        {dates.map(d => {
+        {dates[type].map(d => {
           const { name, date } = d
 
           return (

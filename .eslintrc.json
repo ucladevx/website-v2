@@ -14,15 +14,13 @@
       {
         "extensions": [".js", ".jsx"]
       }
-    ]
+    ],
+    "react/jsx-one-expression-per-line": 0
   },
   "settings": {
     "import/resolver": {
       "alias": {
-        "map": [
-          ["assets", "./assets"],
-          ["images", "./assets/images"]
-        ]
+        "map": [["assets", "./assets"], ["images", "./assets/images"]]
       }
     }
   }

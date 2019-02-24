@@ -1,4 +1,8 @@
 const recruitment = {
+  applicationLinks: {
+    pm: 'https://airtable.com/shrG014f4mEIaQr1g',
+    team: 'https://airtable.com/shr6GrXQNNb0588WY'
+  },
   pm: [
     {
       step: '1',

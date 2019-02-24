@@ -1,10 +1,11 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import { NavLink } from 'react-router-dom'
 import { Col } from '../lib'
-import Config from '../config'
+import { links } from '../config'
 
-const getLinks = close => {
-  const links = Config.links.map(link => (
+const getLinks = close =>
+  links.map(link => (
     <NavLink
       to={link.path}
       exact
@@ -15,13 +16,18 @@ const getLinks = close => {
     </NavLink>
   ))
 
-  return links
-}
-
 const Menu = ({ close }) => (
   <div className="hamburger-menu">
     <Col>{getLinks(close)}</Col>
   </div>
 )
+
+Menu.defaultProps = {
+  close: false
+}
+
+Menu.propTypes = {
+  close: PropTypes.bool
+}
 
 export default Menu
