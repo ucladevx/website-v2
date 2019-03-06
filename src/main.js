@@ -1,7 +1,7 @@
 import './main.scss'
 import React from 'react'
 import ReactDOM from 'react-dom'
-import { HashRouter, Route, Switch, Redirect } from 'react-router-dom'
+import { BrowserRouter, Route, Switch, Redirect } from 'react-router-dom'
 
 import GA from './analytics/google-analytics'
 import Navbar from './navbar'
@@ -12,7 +12,7 @@ import AppContainer from './pages/App'
 GA.init()
 
 const App = () => (
-  <HashRouter onUpdate={() => window.scrollTo(0, 0)}>
+  <BrowserRouter onUpdate={() => window.scrollTo(0, 0)}>
     <AppContainer>
       <GA.RouteTracker />
       <HamburgerMenu />
@@ -32,7 +32,7 @@ const App = () => (
         <Redirect to="/" />
       </Switch>
     </AppContainer>
-  </HashRouter>
+  </BrowserRouter>
 )
 
 ReactDOM.render(<App />, document.getElementById('mount'))

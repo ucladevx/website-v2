@@ -5,8 +5,7 @@
   "main": "index.js",
   "repository": "https://github.com/ucladevx/website-v2",
   "scripts": {
-    "build": "webpack --mode=production --env.production",
-    "start-old": "webpack-dev-server --mode=development --env.development",
+    "build": "parcel build src/index.html -d dist/",
     "start": "parcel ./src/index.html",
     "format": "prettier-eslint --write \"src/**/*.{js,scss}\"",
     "lint": "eslint --fix src",
@@ -55,9 +54,10 @@
     "sass": "^1.17.2",
     "sass-loader": "^7.1.0",
     "style-loader": "^0.23.0",
+    "surge": "^0.20.1",
     "webpack": "^4.19.0",
     "webpack-cli": "^3.1.0",
-    "webpack-dev-server": "^3.1.8"
+    "webpack-dev-server": "^3.2.0"
   },
   "dependencies": {
     "assets": "^3.0.1",
