@@ -1,6 +1,7 @@
 import Home from './home'
 import Recruitment from './recruitment'
 import Projects from './projects'
+import Team from './team'
 
 const pageRoutes = {
   home: {
@@ -16,6 +17,11 @@ const pageRoutes = {
   projects: {
     component: Projects,
     path: '/projects/:year(spring18)',
+    exact: true
+  },
+  team: {
+    component: Team,
+    path: '/team',
     exact: true
   }
 }
