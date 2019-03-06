@@ -1,6 +1,6 @@
 #!/bin/bash
 
-S3_BUCKET="ucladevx-website"
+S3_BUCKET="www.ucladevx.com"
 DEPLOY_BRANCH="master"
 BUILD_FOLDER="dist"
 
