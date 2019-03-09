@@ -2,7 +2,8 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import format from 'date-fns/format'
 
-import { Pill, PillItem } from '../../../lib'
+import Pill from '../../../components/lib/Pill'
+import PillItem from '../../../components/lib/PillItem'
 import { recruitment } from '../../../config'
 
 const formatDate = date => {

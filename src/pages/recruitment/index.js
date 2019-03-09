@@ -1,5 +1,8 @@
 import React from 'react'
-import { Pill, PillItem, Container, ContainerBody } from '../../lib'
+import Pill from '../../components/lib/Pill'
+import PillItem from '../../components/lib/PillItem'
+import Container from '../../components/lib/Container'
+import ContainerBody from '../../components/lib/ContainerBody'
 import TeamPanel from './components/TeamPanel'
 import PMPanel from './components/PMPanel'
 

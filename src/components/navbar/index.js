@@ -1,7 +1,8 @@
 import React from 'react'
-import logo from '../assets/images/logo.svg'
-import { links } from '../config'
-import { Row, RowItem } from '../lib'
+import logo from '../../assets/images/logo.svg'
+import { links } from '../../config'
+import Row from '../lib/Row'
+import RowItem from '../lib/RowItem'
 import Link from './Link'
 
 const Navbar = () => (

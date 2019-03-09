@@ -1,6 +1,6 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
-import { RowItem } from '../lib'
+import RowItem from '../lib/RowItem'
 
 const Link = ({ children, to }) => (
   <RowItem className="link-item">

@@ -1,8 +1,8 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { NavLink } from 'react-router-dom'
-import { Col } from '../lib'
-import { links } from '../config'
+import Col from '../lib/Col'
+import { links } from '../../config'
 
 const getLinks = close =>
   links.map(link => (

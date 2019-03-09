@@ -1,6 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { Container, ContainerBody } from '../../lib'
+import Container from '../../components/lib/Container'
+import ContainerBody from '../../components/lib/ContainerBody'
 import { projects } from '../../config'
 import Panel from './components/Panel'
 import Image from './components/Image'

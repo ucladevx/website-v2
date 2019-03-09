@@ -1,6 +1,6 @@
 import React from 'react'
-import Row from '../../lib/Row'
-import RowItem from '../../lib/RowItem'
+import Row from '../../components/lib/Row'
+import RowItem from '../../components/lib/RowItem'
 import { socialLinks } from '../../config'
 
 const Icons = () => (

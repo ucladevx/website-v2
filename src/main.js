@@ -4,8 +4,8 @@ import ReactDOM from 'react-dom'
 import { BrowserRouter, Route, Switch, Redirect } from 'react-router-dom'
 
 import GA from './analytics/google-analytics'
-import Navbar from './navbar'
-import HamburgerMenu from './hamburger'
+import Navbar from './components/navbar'
+import HamburgerMenu from './components/hamburger'
 import pages from './pages'
 import AppContainer from './pages/App'
 

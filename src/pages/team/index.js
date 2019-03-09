@@ -1,5 +1,7 @@
 import React from 'react'
-import { Container, ContainerBody } from '../../lib'
+import Container from '../../components/lib/Container'
+import ContainerBody from '../../components/lib/ContainerBody'
+
 import { team } from '../../config'
 
 const sortingHat = (personA, personB) => {

@@ -1,10 +1,10 @@
 @import './style/vars';
 @import './style/typography';
 @import './style/normalize';
-@import './lib/style';
+@import './components/lib/style';
 
-@import './navbar/style';
-@import './hamburger/style';
+@import './components/navbar/style';
+@import './components/hamburger/style';
 @import './pages/home/style';
 @import './pages/recruitment/style';
 @import './pages/projects/style';
