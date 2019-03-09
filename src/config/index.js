@@ -1,5 +1,4 @@
 export { default as analytics } from './analytics'
-export { default as dates } from './dates'
 export { default as socialLinks } from './social-links'
 export { default as links } from './links'
 export { default as projects } from './projects'

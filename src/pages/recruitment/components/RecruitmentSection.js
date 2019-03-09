@@ -1,11 +1,22 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import format from 'date-fns/format'
 
 import { Pill, PillItem } from '../../../lib'
-import { dates, recruitment } from '../../../config'
+import { recruitment } from '../../../config'
+
+const formatDate = date => {
+  const formatter = d => format(d, 'MMMM Do')
+  const baseDate = {
+    single: formatter(date.value),
+    range: `${formatter(date.from)} - ${formatter(date.to)}`
+  }[date.type]
+
+  return `${baseDate}${date.detail ? ` (${date.detail})` : ''}`
+}
 
 const RecruitmentSection = ({ type }) => {
-  const appLink = recruitment.applicationLinks[type]
+  const appLink = recruitment[type].applicationLink
   return (
     <section>
       <a href={appLink} target="_blank" rel="noopener noreferrer">
@@ -22,7 +33,7 @@ const RecruitmentSection = ({ type }) => {
       <h2>Recruitment Process</h2>
       <br />
       <div className="grid">
-        {recruitment[type].map(s => {
+        {recruitment[type].process.map(s => {
           const { step, name, description } = s
 
           return (
@@ -44,16 +55,12 @@ const RecruitmentSection = ({ type }) => {
       <h2>Fall 2018 Recruitment Dates</h2>
       <br />
       <div className="grid">
-        {dates[type].map(d => {
-          const { name, date } = d
-
-          return (
-            <div key={name} className="date">
-              <h3 className="name">{name}</h3>
-              <h5>{date}</h5>
-            </div>
-          )
-        })}
+        {recruitment[type].dates.map(dateInfo => (
+          <div key={dateInfo.name} className="date_info">
+            <h3 className="name">{dateInfo.name}</h3>
+            <h5 className="date">{formatDate(dateInfo)}</h5>
+          </div>
+        ))}
       </div>
     </section>
   )
