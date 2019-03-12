@@ -57,7 +57,7 @@ const RecruitmentSection = ({ type }) => {
         })}
       </div>
 
-      <h2>Fall 2018 Recruitment Dates</h2>
+      <h2>{recruitment.quarter} Recruitment Dates</h2>
       <br />
       <div className="grid">
         {recruitment[type].dates.map(dateInfo => (
