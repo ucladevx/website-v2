@@ -1,28 +1,46 @@
+/**
+ * Dates should be of the type
+ * {
+ *  name: string,
+ *  type: 'single',
+ *  value: Date,
+ *  detail?: string
+ * }
+ * OR
+ * {
+ *   name: string,
+ *   type: 'range',
+ *   from: Date,
+ *   to: Date,
+ *   detail?: string
+ * }
+ */
+
 const unifiedDates = [
   {
     name: 'Application Release',
     type: 'single',
     value: new Date('March 14, 2019'),
-    detail: 'Winter Quarter, Week 10 Thursday'
+    detail: 'Winter, Thursday of Week 10'
   },
   {
     name: 'Application Deadline',
     type: 'single',
-    value: new Date('April 3, 2019'),
-    detail: 'Spring Quarter, Week 1 Wednesday'
+    value: new Date('April 2, 2019'),
+    detail: 'Spring, Tuesday of Week 1'
   },
   {
-    name: 'Interview',
-    type: 'range',
-    from: new Date('April 2, 2019'),
-    to: new Date('April 3, 2019'),
-    detail: 'Weekend of Week 0'
+    name: 'Recruiting Night',
+    type: 'single',
+    value: new Date('April 4, 2019'),
+    detail: 'Spring, Thursday of Week 1'
   }
 ]
 
 const recruitment = {
   pm: {
-    applicationLink: 'https://airtable.com/shrG014f4mEIaQr1g',
+    applicationLink: null,
+    // applicationLink: 'https://ucladevx.com/l/application'
     dates: unifiedDates,
     process: [
       {
@@ -52,7 +70,8 @@ const recruitment = {
     ]
   },
   team: {
-    applicationLink: 'https://airtable.com/shr6GrXQNNb0588WY',
+    applicationLink: null,
+    // applicationLink: 'https://ucladevx.com/l/application'
     dates: unifiedDates,
     process: [
       {

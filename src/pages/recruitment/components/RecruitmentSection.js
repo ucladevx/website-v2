@@ -20,13 +20,17 @@ const RecruitmentSection = ({ type }) => {
   const appLink = recruitment[type].applicationLink
   return (
     <section>
-      <a href={appLink} target="_blank" rel="noopener noreferrer">
-        <Pill outline="yellow">
-          <PillItem color="yellow" fill>
-            Application
-          </PillItem>
-        </Pill>
-      </a>
+      {appLink ? (
+        <a href={appLink} target="_blank" rel="noopener noreferrer">
+          <Pill outline="yellow">
+            <PillItem color="yellow" fill>
+              Application
+            </PillItem>
+          </Pill>
+        </a>
+      ) : (
+        <h3>Application coming soon...</h3>
+      )}
       <br />
       <br />
       <br />
