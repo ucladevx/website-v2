@@ -1,6 +1,10 @@
 import React from 'react'
+import styled from 'styled-components'
+
 import Container from '../../components/lib/Container'
 import ContainerBody from '../../components/lib/ContainerBody'
+import Text from '../../components/Text'
+import PersonGridItem from './PersonGridItem'
 
 import { team } from '../../config'
 
@@ -13,44 +17,29 @@ const sortingHat = (personA, personB) => {
   return personA.name > personB.name ? 1 : -1
 }
 
+const PeopleGrid = styled.div`
+  margin-bottom: 80px;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  max-width: 100%;
+  flex-wrap: wrap;
+`
+
 const Team = () => (
   <Container>
     <ContainerBody>
-      <div className="team_content">
-        {team.map(({ title, people }) => [
-          <h1 key="header" className="header">
-            {title}
-          </h1>,
-          <div key="people" className="people">
-            {people.sort(sortingHat).map(person => (
-              <div key={person.name} className="team_person">
-                <img
-                  className="person_image"
-                  alt={`${person.name} headshot`}
-                  src={person.image}
-                />
-                <div className="person_text">
-                  <h3 className="name">{person.name}</h3>
-                  <h4 className="role">{person.role}</h4>
-                  <div className="links">
-                    {person.email && (
-                      <a href={`mailto:${person.email}`}>Email</a>
-                    )}
-                    {person.links &&
-                      person.links.linkedIn && (
-                        <a href={person.links.linkedIn}>LinkedIn</a>
-                      )}
-                    {person.links &&
-                      person.links.personal && (
-                        <a href={person.links.personal}>Portfolio</a>
-                      )}
-                  </div>
-                </div>
-              </div>
-            ))}
-          </div>
-        ])}
-      </div>
+      {team.map(({ title, people }) => [
+        <Text as="h1" key="header" bold>
+          {title}
+        </Text>,
+        <PeopleGrid key="people">
+          {people.sort(sortingHat).map(person => (
+            <PersonGridItem key={person.name} person={person} />
+          ))}
+        </PeopleGrid>
+      ])}
     </ContainerBody>
   </Container>
 )
