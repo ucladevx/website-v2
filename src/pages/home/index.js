@@ -1,11 +1,13 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+
 import logo from '../../assets/images/logo.svg'
 import { sponsorship } from '../../config'
 import Col from '../../components/lib/Col'
 import Section from '../../components/lib/Section'
+import Button from '../../components/Button'
+import Text from '../../components/Text'
 import Icons from './icons'
-import JoinUs from './joinUs'
 
 const Home = () => (
   <div className="home-container">
@@ -14,7 +16,11 @@ const Home = () => (
         <Col>
           <img alt="DevX logo" src={logo} />
           <h3>MOONSHOTS FOR UCLA</h3>
-          <JoinUs />
+          <Link to="/recruitment">
+            <Button whiteFill>
+              <Text>JOIN US</Text>
+            </Button>
+          </Link>
         </Col>
       </div>
     </div>

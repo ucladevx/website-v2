@@ -2,8 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import format from 'date-fns/format'
 
-import Pill from '../../../components/lib/Pill'
-import PillItem from '../../../components/lib/PillItem'
+import Button from '../../../components/Button'
 import { recruitment } from '../../../config'
 
 const formatDate = date => {
@@ -21,13 +20,9 @@ const RecruitmentSection = ({ type }) => {
   return (
     <section>
       {appLink ? (
-        <a href={appLink} target="_blank" rel="noopener noreferrer">
-          <Pill outline="yellow">
-            <PillItem color="yellow" fill>
-              Application
-            </PillItem>
-          </Pill>
-        </a>
+        <Button whiteFill as="a" href={appLink}>
+          Application
+        </Button>
       ) : (
         <h3>Application coming soon...</h3>
       )}

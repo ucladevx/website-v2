@@ -1,6 +1,5 @@
 import React from 'react'
-import Pill from '../../components/lib/Pill'
-import PillItem from '../../components/lib/PillItem'
+import SelectorPill from '../../components/SelectorPill'
 import Container from '../../components/lib/Container'
 import ContainerBody from '../../components/lib/ContainerBody'
 import TeamPanel from './components/TeamPanel'
@@ -11,7 +10,7 @@ class Recruitment extends React.Component {
     super(props)
 
     this.state = {
-      role: 'TEAM'
+      role: 'Team'
     }
   }
 
@@ -27,25 +26,14 @@ class Recruitment extends React.Component {
       <Container>
         <ContainerBody>
           <div className="recruitment_heading">
-            <Pill outline="yellow">
-              <PillItem
-                color="yellow"
-                onClick={() => this.onPillClick('PM')}
-                fill={role === 'PM'}
-              >
-                PM
-              </PillItem>
-              <PillItem
-                color="yellow"
-                onClick={() => this.onPillClick('TEAM')}
-                fill={role === 'TEAM'}
-              >
-                Team
-              </PillItem>
-            </Pill>
+            <SelectorPill
+              clickHandler={this.onPillClick}
+              items={['PM', 'Team']}
+              activeItem={role}
+            />
           </div>
           <div className="recruitment_content">
-            {role === 'TEAM' ? <TeamPanel /> : <PMPanel />}
+            {role === 'Team' ? <TeamPanel /> : <PMPanel />}
           </div>
         </ContainerBody>
       </Container>
