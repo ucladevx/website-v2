@@ -13,7 +13,7 @@ const getSize = props => {
     (props.as &&
       typography.typeHierarchy[props.as] &&
       typography.typeHierarchy[props.as].size) ||
-    DEFAULT_COLOR
+    DEFAULT_SIZE
   )
 }
 
@@ -30,7 +30,7 @@ const getColor = props => {
     (props.as &&
       typography.typeHierarchy[props.as] &&
       typography.typeHierarchy[props.as].color) ||
-    DEFAULT_SIZE
+    DEFAULT_COLOR
   )
 }
 

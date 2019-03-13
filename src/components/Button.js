@@ -38,5 +38,6 @@ export default styled.button`
   border-radius: 21.5px;
   overflow: hidden;
   padding: 12px 20px;
+  font-size: 14px;
   ${getButtonStyle};
 `

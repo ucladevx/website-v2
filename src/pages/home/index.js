@@ -6,7 +6,6 @@ import { sponsorship } from '../../config'
 import Col from '../../components/lib/Col'
 import Section from '../../components/lib/Section'
 import Button from '../../components/Button'
-import Text from '../../components/Text'
 import Icons from './icons'
 
 const Home = () => (
@@ -17,9 +16,7 @@ const Home = () => (
           <img alt="DevX logo" src={logo} />
           <h3>MOONSHOTS FOR UCLA</h3>
           <Link to="/recruitment">
-            <Button whiteFill>
-              <Text>JOIN US</Text>
-            </Button>
+            <Button whiteFill>JOIN US</Button>
           </Link>
         </Col>
       </div>

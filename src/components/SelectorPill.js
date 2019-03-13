@@ -13,11 +13,16 @@ const OuterPill = styled.div`
   border: 2px solid ${colors.yellow};
 `
 
-const PillItem = styled.div`
+const PillItem = styled.button`
   padding: 12px 20px;
+  border: none;
   color: ${props => (props.active ? colors.darkBlue : colors.yellow)};
   background-color: ${props =>
     props.active ? colors.yellow : colors.darkBlue};
+  font-size: 18px;
+  letter-spacing: 3px;
+  cursor: pointer;
+  outline: none;
 `
 
 const SelectorPill = ({ items, activeItem, clickHandler }) => (
