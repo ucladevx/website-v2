@@ -40,8 +40,7 @@ const unifiedDates = [
 const recruitment = {
   quarter: 'Spring 2019',
   pm: {
-    applicationLink: null,
-    // applicationLink: 'https://ucladevx.com/l/application'
+    applicationLink: 'https://ucladevx.com/l/app',
     dates: unifiedDates,
     process: [
       {
@@ -71,8 +70,7 @@ const recruitment = {
     ]
   },
   team: {
-    applicationLink: null,
-    // applicationLink: 'https://ucladevx.com/l/application'
+    applicationLink: 'https://ucladevx.com/l/app',
     dates: unifiedDates,
     process: [
       {
