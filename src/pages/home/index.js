@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 
 import logo from '../../assets/images/logo.svg'
-import { sponsorship } from '../../config'
+import { recruitment, sponsorship } from '../../config'
 import Col from '../../components/lib/Col'
 import Section from '../../components/lib/Section'
 import Button from '../../components/Button'
@@ -15,9 +15,9 @@ const Home = () => (
         <Col>
           <img alt="DevX logo" src={logo} />
           <h3>MOONSHOTS FOR UCLA</h3>
-          <Link to="/recruitment">
+          <a href={recruitment.applicationLink}>
             <Button whiteFill>JOIN US</Button>
-          </Link>
+          </a>
         </Col>
       </div>
     </div>

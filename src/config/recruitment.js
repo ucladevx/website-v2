@@ -37,10 +37,13 @@ const unifiedDates = [
   }
 ]
 
+export const APPLICATION_LINK = 'https://ucladevx.com/l/app'
+
 const recruitment = {
   quarter: 'Spring 2019',
+  applicationLink: APPLICATION_LINK,
   pm: {
-    applicationLink: 'https://ucladevx.com/l/app',
+    applicationLink: APPLICATION_LINK,
     dates: unifiedDates,
     process: [
       {
@@ -70,7 +73,7 @@ const recruitment = {
     ]
   },
   team: {
-    applicationLink: 'https://ucladevx.com/l/app',
+    applicationLink: APPLICATION_LINK,
     dates: unifiedDates,
     process: [
       {
