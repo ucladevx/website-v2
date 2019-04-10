@@ -5,6 +5,7 @@ import bruinHubLogo from '../assets/images/productLogos/bruin_hub.png'
 import bruinmeetLogo from '../assets/images/productLogos/bruinmeet.jpg'
 import mappeningLogo from '../assets/images/productLogos/mappening.png'
 import studySmartLogo from '../assets/images/productLogos/study_smart.png'
+import onCampusLogo from '../assets/images/productLogos/oncampus.png'
 
 export default {
   spring18: [
@@ -49,6 +50,12 @@ export default {
       description:
         'BPool aims to be the next iteration in UCLA ridesharing, looking to simplify and streamline the ability for Bruins to get from point A to point B. Focused on providing a simple user interface and all in one integrated web application, we believe BPool to be the future of long distance carpooling.',
       image: bPoolLogo
+    },
+    {
+      name: 'OnCampus',
+      description:
+        'Students deserve to find clubs they’ll love. OnCampus is a web platform that helps students find clubs based on their interests.',
+      image: onCampusLogo
     }
   ]
 }
