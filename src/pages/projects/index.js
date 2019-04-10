@@ -13,7 +13,13 @@ const Projects = ({ match }) => {
     <Panel key={project.name}>
       <Image path={project.image} />
       <Text left={idx % 2 === 1}>
-        <h1>{project.name}</h1>
+        {project.link ? (
+          <a href={project.link}>
+            <h1>{project.name}</h1>
+          </a>
+        ) : (
+          <h1>{project.name}</h1>
+        )}
         <h5>{project.description}</h5>
       </Text>
     </Panel>

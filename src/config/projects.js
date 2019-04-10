@@ -19,6 +19,7 @@ export default {
       name: 'BruinMeet',
       description:
         'BruinMeet is a UCLA-exclusive dating app aimed at getting people off the app and into the date. We love love <3',
+      link: 'https://www.bruinmeet.com',
       image: bruinmeetLogo
     },
     {
@@ -31,18 +32,21 @@ export default {
       name: 'Bquest',
       description:
         'Bquest is a peer-to-peer platform that helps UCLA students find the right major. On Bquest undecided or undeclared UCLA students can find ambassadors from the majors they are interested in. Ambassadors share their personal experience and give students an insight into their major. This information can help students make good decisions.',
+      link: 'https://bquest.ucladevx.com/',
       image: bQuestLogo
     },
     {
       name: 'Mappening',
       description:
         'Mappening is a web app that aggregates events across the UCLA campus onto a single highly visual map to minimize search effort and promote discovery. Our app allows students to browse through events happening near or on campus and explore everything UCLA has to offer.',
+      link: 'https://www.mappening.io/',
       image: mappeningLogo
     },
     {
       name: 'StudySmart',
       description:
         "StudySmart gives students instant access to all the information they need about the best study spots on campus. Whether it's how busy a library is, what time the Hedrick Study closes, or where to reserve a YRL pod, all the answers are found in a single application that is updated in real-time. Spare yourself the stress - StudySmart!",
+      link: 'http://ss-temp.atwebpages.com/',
       image: studySmartLogo
     },
     {
