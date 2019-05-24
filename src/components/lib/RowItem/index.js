@@ -1,13 +1,10 @@
-import React from 'react'
-import classnames from 'classnames'
+import styled from 'styled-components'
 
-const RowItem = ({ children, className, style }) => {
-  const classNames = classnames('lib_row-item', className)
-  return (
-    <div className={classNames} style={style}>
-      {children}
-    </div>
-  )
-}
+const RowItem = styled.div`
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+`
 
 export default RowItem
