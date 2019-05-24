@@ -3,28 +3,28 @@ const team = [
     title: 'Executive Board',
     people: [
       {
-        name: 'Ram Goli',
+        name: 'Meera Rachamallu',
         role: 'President',
-        email: 'ramsgoli@ucla.edu',
+        email: 'mrachamallu@ucla.edu',
         links: {
-          linkedIn: 'https://www.linkedin.com/in/ramsgoli'
+          linkedIn: 'https://www.linkedin.com/in/meera-rachamallu/',
+          personal: 'http://meerarachamallu.me'
         }
       },
       {
-        name: 'Karen Fann',
+        name: 'Terrence Ho',
         role: 'Internal VP',
-        email: 'kfann285@gmail.com',
+        email: 'terrenceho.books@gmail.com',
         links: {
-          linkedIn: 'https://www.linkedin.com/in/karen-fann/',
-          personal: 'https://www.karenfann.com'
+          linkedIn: 'https://www.linkedin.com/in/terrence-ho/'
         }
       },
       {
-        name: 'Ayush Patel',
-        role: 'External VP | Director of Product',
-        email: 'ayushp@ucla.edu',
+        name: 'Yifan You',
+        role: 'External VP',
+        email: 'harry473417@ucla.edu',
         links: {
-          linkedIn: 'https://www.linkedin.com/in/ayushpatel34/'
+          linkedIn: 'https://www.linkedin.com/in/yifan-you/'
         }
       }
     ]
@@ -33,71 +33,35 @@ const team = [
     title: 'Officer Board',
     people: [
       {
-        name: 'Bibek Ghimire',
-        role: 'Director of Bootcamp',
-        email: 'bibekg@ucla.edu',
-        links: {
-          linkedIn: 'https://linkedin.com/id/bibekg',
-          personal: 'https://bibekg.com/'
-        }
+        name: 'April Guo',
+        role: 'Director of Recruiting'
       },
       {
-        name: 'Jorge Fuentes',
-        role: 'Tech Advisor',
-        email: 'jsjfuentes@ucla.edu',
-        links: {
-          linkedIn: 'https://www.linkedin.com/in/jsfuentes'
-        }
+        name: 'Austin Telles',
+        role: 'Director of Finance'
       },
       {
-        name: 'Yifan You',
-        role: 'Director of Marketing',
-        email: 'harry473417@ucla.edu',
+        name: 'Monetha Raghani',
+        role: 'Director of Marketing'
+      },
+      {
+        name: 'Samuel Lee',
+        role: 'Director of Events/Operations',
         links: {
-          linkedIn: 'https://www.linkedin.com/in/yifan-you/'
+          linkedIn: 'https://www.linkedin.com/in/samuel-j-lee/'
         }
       },
       {
         name: 'Chaitanya Pedada',
-        role: 'Director of Bootcamp',
-        email: 'chaitanya.pedada@gmail.com',
-        links: {
-          linkedIn: 'https://www.linkedin.com/in/chaitanya-pedada-5896b1147/'
-        }
+        role: 'Technical Advisor'
       },
       {
-        name: 'Meera Rachamallu',
-        role: 'Director of Finance',
-        email: 'mrachamallu@ucla.edu',
-        links: {
-          linkedIn: 'https://www.linkedin.com/in/meera-rachamallu/',
-          personal: 'http://meerarachamallu.me'
-        }
+        name: 'Aidan Wolk',
+        role: 'Technical Advisor'
       },
       {
-        name: 'Nidhi Bhanu',
-        role: 'Director of Design',
-        email: 'nidhib@g.ucla.edu',
-        links: {
-          linkedIn: 'https://www.linkedin.com/in/nidhi-bhanu/',
-          personal: 'https://www.nidhibhanu.com/'
-        }
-      },
-      {
-        name: 'Sharon John',
-        role: 'Director of Recruiting',
-        email: 'sharonjohn@g.ucla.edu',
-        links: {
-          linkedIn: 'https://www.linkedin.com/in/sharon-john/'
-        }
-      },
-      {
-        name: 'Terrence Ho',
-        role: 'Director of Bootcamp',
-        email: 'terrenceho.books@gmail.com',
-        links: {
-          linkedIn: 'https://www.linkedin.com/in/terrence-ho/'
-        }
+        name: 'Hirday Gupta',
+        role: 'Technical Advisor'
       }
     ]
   }
