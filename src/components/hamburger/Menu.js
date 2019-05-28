@@ -5,16 +5,26 @@ import Col from '../lib/Col'
 import { links } from '../../config'
 
 const getLinks = close =>
-  links.map(link => (
-    <NavLink
-      to={link.path}
-      exact
-      onClick={close}
-      activeStyle={{ color: '#F8CC29' }}
-    >
-      {link.label}
-    </NavLink>
-  ))
+  links.map(
+    link =>
+      ({
+        internal: (
+          <NavLink
+            to={link.path}
+            exact
+            onClick={close}
+            activeStyle={{ color: '#F8CC29' }}
+          >
+            {link.label}
+          </NavLink>
+        ),
+        external: (
+          <a key={link.path} href={link.path}>
+            {link.label}
+          </a>
+        )
+      }[link.type])
+  )
 
 const Menu = ({ close }) => (
   <div className="hamburger-menu">

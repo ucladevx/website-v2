@@ -57,16 +57,26 @@ const Navbar = () => (
         <Logo height={19} />
       </NavLink>
       <NavbarLinks>
-        {links.map(link => (
-          <NavLink
-            key={link.path}
-            to={link.path}
-            exact
-            activeStyle={{ color: colors.yellow }}
-          >
-            {link.label}
-          </NavLink>
-        ))}
+        {links.map(
+          link =>
+            ({
+              internal: (
+                <NavLink
+                  key={link.path}
+                  to={link.path}
+                  exact
+                  activeStyle={{ color: colors.yellow }}
+                >
+                  {link.label}
+                </NavLink>
+              ),
+              external: (
+                <a key={link.path} href={link.path}>
+                  {link.label}
+                </a>
+              )
+            }[link.type])
+        )}
       </NavbarLinks>
     </NavbarDiv>
   </NavbarContainer>
