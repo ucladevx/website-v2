@@ -1,3 +1,17 @@
+/**
+ * Each link has shape:
+ *  {
+ *    label: string
+ *    // The label that shows up on navbar/menu
+ *
+ *    type: 'internal' | 'external'
+ *    // Whether the link is internal (React-Router-handled) or external (<a/> tag-handled)
+ *
+ *    path: string
+ *    // The url for the link
+ *  }
+ */
+
 export default [
   {
     label: 'HOME',
@@ -21,7 +35,7 @@ export default [
   },
   {
     label: 'DOCS',
-    type: 'external',
-    path: 'https://docs.ucladevx.com'
+    type: 'internal',
+    path: '/docs'
   }
 ]
