@@ -9,7 +9,7 @@
     "start": "parcel ./src/index.html",
     "format": "prettier-eslint --write \"src/**/*.{js,scss}\"",
     "lint": "eslint --fix src",
-    "test": "echo \"Error: no test specified\""
+    "test": "echo \"No tests specified\""
   },
   "author": "",
   "license": "ISC",
@@ -46,7 +46,7 @@
     "husky": "^1.0.0-rc.14",
     "lint-staged": "^7.2.2",
     "mini-css-extract-plugin": "^0.4.2",
-    "node-sass": "^4.9.3",
+    "node-sass": "^4.12.0",
     "parcel-bundler": "^1.11.0",
     "parcel-plugin-static-files-copy": "^2.0.0",
     "prettier": "^1.14.2",
