@@ -4,6 +4,7 @@ import styled from 'styled-components'
 
 import { colors, breakpoints, sizes } from '../styles'
 import Logo from './Logo'
+import Text from './Text'
 import { links } from '../config'
 
 const NavbarContainer = styled.div`
@@ -12,25 +13,22 @@ const NavbarContainer = styled.div`
 `
 
 const NavbarLinks = styled.div`
+  display: flex;
+  position: relative;
+  margin-left: 20px;
+  overflow-x: auto;
+
   & > * {
-    margin-left: 10px;
+    margin-right: 20px;
   }
 
   a {
     text-decoration: none;
   }
-
-  display: none;
-
-  @media (min-width: ${breakpoints.mdMin}px) {
-    display: flex;
-    & > * {
-      margin-left: 56px;
-    }
-  }
 `
 
 const NavbarDiv = styled.nav`
+  position: relative;
   padding: 20px;
   height: 100%;
   width: 100%;
@@ -67,12 +65,12 @@ const Navbar = () => (
                   exact
                   activeStyle={{ color: colors.yellow }}
                 >
-                  {link.label}
+                  <Text size={14}>{link.label}</Text>
                 </NavLink>
               ),
               external: (
                 <a key={link.path} href={link.path}>
-                  {link.label}
+                  <Text size={14}>{link.label}</Text>
                 </a>
               )
             }[link.type])

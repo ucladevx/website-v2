@@ -3,13 +3,13 @@ import React from 'react'
 import ReactDOM from 'react-dom'
 import { BrowserRouter, Route, Switch, Redirect } from 'react-router-dom'
 import { createGlobalStyle, ThemeProvider } from 'styled-components'
+import { rgba } from 'polished'
 
 import GA from './analytics/google-analytics'
 import Navbar from './components/Navbar'
-import HamburgerMenu from './components/hamburger'
 import pages from './pages'
 import AppContainer from './pages/App'
-import { typography } from './styles'
+import { colors, typography } from './styles'
 
 GA.init()
 
@@ -20,6 +20,18 @@ const GlobalStyle = createGlobalStyle`
 
   button {
     font-family: ${typography.baseFont};
+  }
+
+  ::-webkit-scrollbar {
+      width: 1px;
+      height: 1px;
+  }
+  ::-webkit-scrollbar-track {
+      background-color: transparent;
+  }
+  ::-webkit-scrollbar-thumb {
+      background-color: ${rgba(colors.white, 0.4)};
+      border-radius: 3px;
   }
 `
 
@@ -33,7 +45,6 @@ const App = () => (
       <AppContainer>
         <GlobalStyle />
         <GA.RouteTracker />
-        <HamburgerMenu />
         <Navbar />
         <Switch>
           {Object.keys(pages).map(pageKey => {

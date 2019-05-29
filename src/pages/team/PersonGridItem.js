@@ -42,18 +42,16 @@ const PersonGridItem = ({ person }) => (
           Email
         </Text>
       )}
-      {person.links &&
-        person.links.linkedIn && (
-          <Text as="a" href={person.links.linkedIn} underline bold>
-            LinkedIn
-          </Text>
-        )}
-      {person.links &&
-        person.links.personal && (
-          <Text as="a" href={person.links.personal} underline bold>
-            Portfolio
-          </Text>
-        )}
+      {person.links && person.links.linkedIn && (
+        <Text as="a" href={person.links.linkedIn} underline bold>
+          LinkedIn
+        </Text>
+      )}
+      {person.links && person.links.personal && (
+        <Text as="a" href={person.links.personal} underline bold>
+          Portfolio
+        </Text>
+      )}
     </PersonGridItemLinks>
   </PersonGridItemDiv>
 )
