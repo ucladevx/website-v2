@@ -1,10 +1,21 @@
 import React from 'react'
-import Row from '../../components/lib/Row'
-import RowItem from '../../components/lib/RowItem'
-import { socialLinks } from '../../config'
+import styled from 'styled-components'
+
+import Row from './Row'
+import RowItem from './RowItem'
+import { socialLinks } from '../config'
+
+const IconsRow = styled.div`
+  width: 200px;
+  margin-bottom: 24px;
+
+  img {
+    width: 33px;
+  }
+`
 
 const Icons = () => (
-  <div className="icons-row">
+  <IconsRow>
     <Row spaceBetween>
       {socialLinks.map(socialLink => (
         <RowItem key={socialLink.icon}>
@@ -14,7 +25,7 @@ const Icons = () => (
         </RowItem>
       ))}
     </Row>
-  </div>
+  </IconsRow>
 )
 
 export default Icons

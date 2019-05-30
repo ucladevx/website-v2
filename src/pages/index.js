@@ -1,4 +1,4 @@
-import Home from './home'
+import HomePage from './HomePage'
 import Recruitment from './recruitment'
 import Projects from './projects'
 import DocsPage from './DocsPage'
@@ -6,7 +6,7 @@ import Team from './team'
 
 const pageRoutes = {
   home: {
-    component: Home,
+    component: HomePage,
     path: '/',
     exact: true
   },

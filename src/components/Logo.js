@@ -5,6 +5,7 @@ const Logo = styled.img.attrs({
   alt: 'DevX Logo'
 })`
   ${props => props.height && `height: ${props.height}px`};
+  ${props => props.width && `width: ${props.width}px`};
 `
 
 export default Logo

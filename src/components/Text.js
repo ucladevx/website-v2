@@ -3,6 +3,7 @@ import { colors, typography } from '../styles'
 
 const DEFAULT_COLOR = colors.white
 const DEFAULT_SIZE = 14
+const DEFAULT_WEIGHT = 'normal'
 
 const getSize = props => {
   if (props.size) {
@@ -17,7 +18,28 @@ const getSize = props => {
   )
 }
 
+const getWeight = props => {
+  if (props.bold) {
+    return 'bold'
+  }
+
+  if (props.weight) {
+    return props.weight
+  }
+
+  return (
+    (props.as &&
+      typography.typeHierarchy[props.as] &&
+      typography.typeHierarchy[props.as].weight) ||
+    DEFAULT_WEIGHT
+  )
+}
+
 const getColor = props => {
+  if (props.color === 'css') {
+    return null
+  }
+
   if (props.color) {
     return props.color
   }
@@ -36,9 +58,12 @@ const getColor = props => {
 
 const Text = styled.p`
   font-size: ${getSize}px;
-  font-weight: ${props => (props.bold ? 'bold' : 'normal')};
-  line-height: 1.37em;
-  color: ${getColor};
+  font-weight: ${getWeight};
+  line-height: ${props => props.lineHeight || '1.37em'};
+  ${props => {
+    const c = getColor(props)
+    return c ? `color: ${c}` : ''
+  }};
   ${props => props.center && 'text-align: center;'}
   text-decoration: ${props => (props.underline ? 'underline' : 'none')};
   cursor: ${props =>
