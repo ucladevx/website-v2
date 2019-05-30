@@ -14,6 +14,11 @@ const WhatIsDevXContainer = styled.div`
   z-index: 2;
   position: relative;
 
+  a {
+    color: ${colors.darkYellow};
+    text-decoration: underline;
+  }
+
   & > *:nth-child(odd) {
     text-align: left;
   }

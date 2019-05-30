@@ -29,12 +29,14 @@ const sections = [
   {
     title: 'Want to Apply?',
     contents: [
-      () =>
-        `We accept applications in the Fall, Winter and Spring. All backgrounds
-        and skill levels are welcome! Check out our ${(
-          <Link to="/recruitment">Recruitment</Link>
-        )} page to see how our process
-        works.`
+      () => (
+        <span>
+          We accept applications in the Fall, Winter and Spring. All backgrounds
+          and skill levels are welcome! Check out our{' '}
+          {<Link to="/recruitment">Recruitment</Link>} page to see how our
+          process works.
+        </span>
+      )
     ]
   }
 ]
