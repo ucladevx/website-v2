@@ -1,12 +1,12 @@
 import React from 'react'
 import styled from 'styled-components'
 
-import Container from '../../components/lib/Container'
-import ContainerBody from '../../components/lib/ContainerBody'
-import Text from '../../components/Text'
-import PersonGridItem from './PersonGridItem'
+import Container from '../components/Container'
+import ContainerBody from '../components/ContainerBody'
+import Text from '../components/Text'
+import PersonGridItem from '../components/PersonGridItem'
 
-import { team } from '../../config'
+import { team } from '../config'
 
 const sortingHat = (personA, personB) => {
   // Make sure president comes first
@@ -27,7 +27,7 @@ const PeopleGrid = styled.div`
   flex-wrap: wrap;
 `
 
-const Team = () => (
+const TeamPage = () => (
   <Container>
     <ContainerBody>
       {team.map(({ title, people }) => [
@@ -44,4 +44,4 @@ const Team = () => (
   </Container>
 )
 
-export default Team
+export default TeamPage

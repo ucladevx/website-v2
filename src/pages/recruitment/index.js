@@ -1,7 +1,7 @@
 import React from 'react'
 import SelectorPill from '../../components/SelectorPill'
-import Container from '../../components/lib/Container'
-import ContainerBody from '../../components/lib/ContainerBody'
+import Container from '../../components/Container'
+import ContainerBody from '../../components/ContainerBody'
 import TeamPanel from './components/TeamPanel'
 import PMPanel from './components/PMPanel'
 

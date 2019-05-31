@@ -1,8 +1,8 @@
 import HomePage from './HomePage'
 import Recruitment from './recruitment'
-import Projects from './projects'
+import Projects from './ProjectsPage'
 import DocsPage from './DocsPage'
-import Team from './team'
+import Team from './TeamPage'
 
 const pageRoutes = {
   home: {
