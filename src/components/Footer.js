@@ -9,7 +9,7 @@ import Icons from './Icons'
 
 const FooterContainer = styled.section`
   padding: 40px;
-  ${breakpoints.medium`
+  ${breakpoints.md`
     padding: 80px;
   `}
 

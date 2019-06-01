@@ -33,7 +33,7 @@ const HeroWrapper = styled.div`
   height: calc(100vh - ${sizes.navbar.height}px);
 
   ${'' /* Correlates with padding on navbar for visual consistency */}
-  ${breakpoints.medium`
+  ${breakpoints.md`
     padding: 20px 140px;
     align-items: flex-start;
 

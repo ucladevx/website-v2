@@ -10,7 +10,7 @@ export default styled.section`
   display: flex;
   justify-content: center;
 
-  ${breakpoints.medium`
+  ${breakpoints.md`
     padding: 40px 140px 140px 140px;
   `}
 `

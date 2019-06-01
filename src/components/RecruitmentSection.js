@@ -47,7 +47,7 @@ const RecruitmentStep = styled.div`
   padding-right: 0px;
   margin-bottom: 50px;
 
-  ${breakpoints.large`
+  ${breakpoints.lg`
     flex: 0 1 50%;
     padding-right: 50px;
   `}

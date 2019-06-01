@@ -7,7 +7,7 @@ const Col = styled.div`
   align-items: center;
   text-align: center;
 
-  ${breakpoints.medium`
+  ${breakpoints.md`
     align-items: flex-start;
     text-align: auto;
   `}

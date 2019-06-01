@@ -1,10 +1,10 @@
 import { css } from 'styled-components'
 
 export const sizes = {
-  extraLarge: 1200,
-  large: 992,
-  medium: 768,
-  small: 576
+  xl: 1200,
+  lg: 992,
+  md: 768,
+  sm: 576
 }
 
 // Iterate through the sizes and create a media template

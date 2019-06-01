@@ -44,7 +44,7 @@ const Panel = styled.div`
   flex-flow: column;
   align-items: center;
 
-  ${breakpoints.medium`
+  ${breakpoints.md`
     flex-flow: row;
     border-bottom: none;
 

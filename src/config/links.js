@@ -14,11 +14,6 @@
 
 export default [
   {
-    label: 'HOME',
-    type: 'internal',
-    path: '/'
-  },
-  {
     label: 'RECRUITMENT',
     type: 'internal',
     path: '/recruitment'

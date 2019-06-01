@@ -43,7 +43,7 @@ const NavbarDiv = styled.nav`
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
 
   /* On large screens, leave large gap on sides of navbar */
-  ${breakpoints.medium`
+  ${breakpoints.md`
     padding: 20px 140px;
   `}
 `

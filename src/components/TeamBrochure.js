@@ -26,11 +26,11 @@ const PositionIcon = styled.img`
 const PositionItem = styled.div`
   flex: 0 1 100%;
   padding-right: 0px;
-  ${breakpoints.medium`
+  ${breakpoints.md`
     flex: 0 1 50%;
     padding-right: 50px;
   `}
-  ${breakpoints.large`
+  ${breakpoints.lg`
     flex: 0 1 33%;
     padding-right: 50px;
   `}

@@ -12,7 +12,7 @@ const PMHero = styled.div`
   justify-content: space-between;
   margin-bottom: 20px;
 
-  ${breakpoints.large`
+  ${breakpoints.lg`
       margin-bottom: 0;
       flex-direction: row-reverse;
   `}
@@ -20,7 +20,7 @@ const PMHero = styled.div`
 
 const TextContainer = styled.div`
   flex: 0 1 100%;
-  ${breakpoints.large`
+  ${breakpoints.lg`
       flex: 0 1 60%;
   `}
 `
@@ -34,7 +34,7 @@ const PMImageContainer = styled.div`
     margin-bottom: 30px;
   }
 
-  ${breakpoints.large`
+  ${breakpoints.lg`
     text-align: right;
     flex: 0 1 40%;
 
