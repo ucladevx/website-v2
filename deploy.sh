@@ -7,7 +7,7 @@ BUILD_FOLDER="dist"
 if [[ $TRAVIS_BRANCH == $DEPLOY_BRANCH ]]; then
 
   # Build the website bundle/assets
-  npm run build
+  yarn build
 
   # Install awscli
   pip install awscli --upgrade --user
