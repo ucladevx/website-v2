@@ -1,4 +1,3 @@
-import './main.scss'
 import React from 'react'
 import ReactDOM from 'react-dom'
 import { BrowserRouter, Route, Switch, Redirect } from 'react-router-dom'
@@ -7,8 +6,9 @@ import { rgba } from 'polished'
 
 import GA from './analytics/google-analytics'
 import Navbar from './components/Navbar'
+import Footer from './components/Footer'
 import pages from './pages'
-import AppContainer from './pages/App'
+import AppContainer from './App'
 import { colors, typography } from './styles'
 
 GA.init()
@@ -60,6 +60,7 @@ const App = () => (
           })}
           <Redirect to="/" />
         </Switch>
+        <Footer />
       </AppContainer>
     </ThemeProvider>
   </BrowserRouter>

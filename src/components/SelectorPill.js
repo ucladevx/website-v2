@@ -13,7 +13,7 @@ const OuterPill = styled.div`
   border: 2px solid ${colors.yellow};
 `
 
-const PillItem = styled.button`
+const PillItem = styled.div`
   padding: 12px 20px;
   border: none;
   color: ${props => (props.active ? colors.darkBlue : colors.yellow)};
@@ -31,7 +31,7 @@ const SelectorPill = ({ items, activeItem, clickHandler }) => (
       <PillItem
         key={item}
         onClick={() => clickHandler(item)}
-        active={item === activeItem}
+        active={activeItem && item.toLowerCase() === activeItem.toLowerCase()}
       >
         {item}
       </PillItem>

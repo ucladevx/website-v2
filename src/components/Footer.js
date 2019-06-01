@@ -9,9 +9,9 @@ import Icons from './Icons'
 
 const FooterContainer = styled.section`
   padding: 40px;
-  @media (min-width: ${breakpoints.mdMin}px) {
+  ${breakpoints.medium`
     padding: 80px;
-  }
+  `}
 
   display: flex;
   flex-direction: column;

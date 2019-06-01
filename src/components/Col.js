@@ -7,10 +7,10 @@ const Col = styled.div`
   align-items: center;
   text-align: center;
 
-  @media (min-width: ${breakpoints.mdMin}px) {
+  ${breakpoints.medium`
     align-items: flex-start;
     text-align: auto;
-  }
+  `}
 
   ${props => (props.middle ? 'align-items: center' : '')};
 `

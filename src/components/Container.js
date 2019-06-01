@@ -10,7 +10,7 @@ export default styled.section`
   display: flex;
   justify-content: center;
 
-  @media (min-width: ${breakpoints.mdMin}px) {
+  ${breakpoints.medium`
     padding: 40px 140px 140px 140px;
-  }
+  `}
 `

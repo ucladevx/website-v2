@@ -1,5 +1,5 @@
 import HomePage from './HomePage'
-import Recruitment from './recruitment'
+import RecruitmentPage from './RecruitmentPage'
 import Projects from './ProjectsPage'
 import DocsPage from './DocsPage'
 import Team from './TeamPage'
@@ -11,9 +11,9 @@ const pageRoutes = {
     exact: true
   },
   recruitment: {
-    component: Recruitment,
+    component: RecruitmentPage,
     path: '/recruitment',
-    exact: true
+    exact: false
   },
   projects: {
     component: Projects,

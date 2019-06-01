@@ -44,7 +44,7 @@ const Panel = styled.div`
   flex-flow: column;
   align-items: center;
 
-  @media (min-width: ${breakpoints.mdMin}px) {
+  ${breakpoints.medium`
     flex-flow: row;
     border-bottom: none;
 
@@ -67,7 +67,7 @@ const Panel = styled.div`
         margin-right: 30px;
       }
     }
-  }
+  `}
 `
 
 const Projects = ({ match }) => {

@@ -7,14 +7,14 @@ const Section = styled.div`
   background-color: ${props => (props.dark ? colors.darkBlue : colors.white)};
 
   & > * {
-    @media (min-width: ${breakpoints.mdMin}px) {
+    ${breakpoints.medium`
       width: 75%;
       text-align: left;
-    }
+    `}
 
-    @media (min-width: ${breakpoints.lgMin}px) {
+    ${breakpoints.medium`
       width: 50%;
-    }
+    `}
   }
 
   ${props => (props.small ? 'padding: 100px;' : '')};
@@ -31,9 +31,9 @@ const Section = styled.div`
         `
       : ''};
 
-  @media (min-width: ${breakpoints.mdMin}px) {
+  ${breakpoints.medium`
     padding: 140px;
-  }
+  `}
 `
 
 export default Section

@@ -7,7 +7,6 @@ import Col from '../components/Col'
 import Text from '../components/Text'
 import Section from '../components/Section'
 import Hero from '../components/Hero'
-import Footer from '../components/Footer'
 
 const WhatIsDevXContainer = styled.div`
   background-color: ${colors.white};
@@ -52,7 +51,6 @@ const HomePage = () => (
         )
       })}
     </WhatIsDevXContainer>
-    <Footer />
   </div>
 )
 
