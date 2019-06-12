@@ -8,10 +8,16 @@ import Logo from './Logo'
 import Text from './Text'
 
 const HeroContent = styled.div`
-  position: absolute;
-  bottom: 100px;
-  z-index: 2;
-  left: 139px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  ${breakpoints.md`
+    align-items: flex-start;
+    position: absolute;
+    bottom: 100px;
+    z-index: 2;
+    left: 139px;
+  `}
 
   ${Logo} {
     margin-bottom: 36px;
