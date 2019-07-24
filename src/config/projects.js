@@ -1,11 +1,10 @@
-import bPoolLogo from '../assets/images/productLogos/bpool.png'
 import bQuestLogo from '../assets/images/productLogos/bquest.png'
 import bruinBiteLogo from '../assets/images/productLogos/bruin_bite.png'
 import bruinHubLogo from '../assets/images/productLogos/bruin_hub.png'
-import bruinmeetLogo from '../assets/images/productLogos/bruinmeet.jpg'
 import mappeningLogo from '../assets/images/productLogos/mappening.png'
 import studySmartLogo from '../assets/images/productLogos/study_smart.png'
 import onCampusLogo from '../assets/images/productLogos/oncampus.png'
+import quickeyLogo from '../assets/images/productLogos/quickey.png'
 
 export default {
   spring18: [
@@ -14,13 +13,6 @@ export default {
       description:
         'Bringing Bruins together one bite at a time!\n\nWith the ease of a few button pushes, Bruin Bite, matches you with new people to eat with at the dining halls! Our goal is to bring you an app that makes meeting fellow Bruins effortless.',
       image: bruinBiteLogo
-    },
-    {
-      name: 'BruinMeet',
-      description:
-        'BruinMeet is a UCLA-exclusive dating app aimed at getting people off the app and into the date. We love love <3',
-      link: 'https://www.bruinmeet.com',
-      image: bruinmeetLogo
     },
     {
       name: 'BruinHub',
@@ -43,23 +35,25 @@ export default {
       image: mappeningLogo
     },
     {
-      name: 'StudySmart',
+      name: 'Quickey',
       description:
-        "StudySmart gives students instant access to all the information they need about the best study spots on campus. Whether it's how busy a library is, what time the Hedrick Study closes, or where to reserve a YRL pod, all the answers are found in a single application that is updated in real-time. Spare yourself the stress - StudySmart!",
-      link: 'http://ss-temp.atwebpages.com/',
-      image: studySmartLogo
-    },
-    {
-      name: 'Bpool',
-      description:
-        'BPool aims to be the next iteration in UCLA ridesharing, looking to simplify and streamline the ability for Bruins to get from point A to point B. Focused on providing a simple user interface and all in one integrated web application, we believe BPool to be the future of long distance carpooling.',
-      image: bPoolLogo
+        "Quickey is a time-saving Chrome New Tab that launches any website with keyboard shortcuts—it's the fastest way to get to where you need in the browser.",
+      link: 'https://www.quickey.co/',
+      image: quickeyLogo
     },
     {
       name: 'OnCampus',
       description:
         'Students deserve to find clubs they’ll love. OnCampus is a web platform that helps students find clubs based on their interests.',
+      link: 'https://oncampus.us/',
       image: onCampusLogo
+    },
+    {
+      name: 'StudySmart',
+      description:
+        "StudySmart gives students instant access to all the information they need about the best study spots on campus. Whether it's how busy a library is, what time the Hedrick Study closes, or where to reserve a YRL pod, all the answers are found in a single application that is updated in real-time. Spare yourself the stress - StudySmart!",
+      link: 'http://ss-temp.atwebpages.com/',
+      image: studySmartLogo
     }
   ]
 }

@@ -16,35 +16,56 @@
  * }
  */
 
-const unifiedDates = [
+const teamDates = [
   {
     name: 'Application Release',
     type: 'single',
-    value: new Date('March 14, 2019'),
-    detail: 'Winter, Thursday of Week 10'
+    value: new Date('September 16, 2019'),
+    detail: 'Summer'
   },
   {
     name: 'Application Deadline',
     type: 'single',
-    value: new Date('April 2, 2019'),
-    detail: 'Spring, Tuesday of Week 1'
+    value: new Date('October 1, 2019'),
+    detail: 'Fall, Tuesday of Week 1'
   },
   {
     name: 'Recruiting Night',
     type: 'single',
-    value: new Date('April 4, 2019'),
-    detail: 'Spring, Thursday of Week 1'
+    value: new Date('October 3, 2019'),
+    detail: 'Fall, Thursday of Week 1'
+  }
+]
+
+const pmDates = [
+  {
+    name: 'Application Release',
+    type: 'single',
+    value: new Date('July 22, 2019'),
+    detail: ''
+  },
+  {
+    name: 'Application Deadline',
+    type: 'single',
+    value: new Date('August 11, 2019'),
+    detail: ''
+  },
+  {
+    name: 'Decision Release',
+    type: 'single',
+    value: new Date('September 1, 2019'),
+    detail: ''
   }
 ]
 
 export const APPLICATION_LINK = 'https://ucladevx.com/l/app'
 
 const recruitment = {
-  quarter: 'Spring 2019',
+  quarter: 'Summer 2019',
   applicationLink: APPLICATION_LINK,
   pm: {
     applicationLink: APPLICATION_LINK,
-    dates: unifiedDates,
+    dates: pmDates,
     process: [
       {
         step: '1',
@@ -74,7 +95,7 @@ const recruitment = {
   },
   team: {
     applicationLink: APPLICATION_LINK,
-    dates: unifiedDates,
+    dates: teamDates,
     process: [
       {
         step: '1',
