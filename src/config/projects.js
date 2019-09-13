@@ -1,7 +1,7 @@
 import bQuestLogo from '../assets/images/productLogos/bquest.png'
 import bruinBiteLogo from '../assets/images/productLogos/bruin_bite.png'
 import bruinHubLogo from '../assets/images/productLogos/bruin_hub.png'
-import mappeningLogo from '../assets/images/productLogos/mappening.png'
+// import mappeningLogo from '../assets/images/productLogos/mappening.png'
 import studySmartLogo from '../assets/images/productLogos/study_smart.png'
 import onCampusLogo from '../assets/images/productLogos/oncampus.png'
 import quickeyLogo from '../assets/images/productLogos/quickey.png'
@@ -27,13 +27,13 @@ export default {
       link: 'https://bquest.ucladevx.com/',
       image: bQuestLogo
     },
-    {
-      name: 'Mappening',
-      description:
-        'Mappening is a web app that aggregates events across the UCLA campus onto a single highly visual map to minimize search effort and promote discovery. Our app allows students to browse through events happening near or on campus and explore everything UCLA has to offer.',
-      link: 'https://www.mappening.io/',
-      image: mappeningLogo
-    },
+    // {
+    //   name: 'Mappening',
+    //   description:
+    //     'Mappening is a web app that aggregates events across the UCLA campus onto a single highly visual map to minimize search effort and promote discovery. Our app allows students to browse through events happening near or on campus and explore everything UCLA has to offer.',
+    //   link: 'https://www.mappening.io/',
+    //   image: mappeningLogo
+    // },
     {
       name: 'Quickey',
       description:
@@ -45,7 +45,7 @@ export default {
       name: 'OnCampus',
       description:
         'Students deserve to find clubs they’ll love. OnCampus is a web platform that helps students find clubs based on their interests.',
-      link: 'https://oncampus.us/',
+      link: 'http://oncampus.us/',
       image: onCampusLogo
     },
     {
