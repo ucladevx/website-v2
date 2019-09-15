@@ -59,6 +59,7 @@ const pmDates = [
 ]
 
 export const APPLICATION_LINK = 'https://ucladevx.com/l/app'
+export const DEV_APPLICATION_LINK = 'https://ucladevx.com/l/devapp'
 
 const recruitment = {
   quarter: 'Summer 2019',
@@ -94,7 +95,7 @@ const recruitment = {
     ]
   },
   team: {
-    applicationLink: APPLICATION_LINK,
+    applicationLink: DEV_APPLICATION_LINK,
     dates: teamDates,
     process: [
       {
