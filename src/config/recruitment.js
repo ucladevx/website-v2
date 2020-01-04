@@ -20,20 +20,20 @@ const teamDates = [
   {
     name: 'Application Release',
     type: 'single',
-    value: new Date('September 16, 2019'),
-    detail: 'Summer'
+    value: new Date('January 3, 2020'),
+    detail: 'Winter Break'
   },
   {
     name: 'Application Deadline',
     type: 'single',
-    value: new Date('October 1, 2019'),
+    value: new Date('January 7, 2020'),
     detail: 'Fall, Tuesday of Week 1'
   },
   {
     name: 'Recruiting Night',
     type: 'single',
-    value: new Date('October 3, 2019'),
-    detail: 'Fall, Thursday of Week 1'
+    value: new Date('January 9, 2020'),
+    detail: 'Winter, Thursday of Week 1'
   }
 ]
 
