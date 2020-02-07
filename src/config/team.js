@@ -34,15 +34,24 @@ const team = [
     people: [
       {
         name: 'April Guo',
-        role: 'Director of Recruiting'
+        role: 'Director of Recruiting',
+        links: {
+          linkedIn: 'https://www.linkedin.com/in/april-fangzhu-guo/'
+        }
       },
       {
         name: 'Austin Telles',
-        role: 'Director of Finance'
+        role: 'Director of Finance',
+        links: {
+          linkedIn: 'https://www.linkedin.com/in/austintelles/'
+        }
       },
       {
         name: 'Monetha Raghani',
-        role: 'Director of Marketing'
+        role: 'Director of Marketing',
+        links: {
+          linkedIn: 'https://www.linkedin.com/in/monetharaghani/'
+        }
       },
       {
         name: 'Samuel Lee',
@@ -53,15 +62,39 @@ const team = [
       },
       {
         name: 'Chaitanya Pedada',
-        role: 'Technical Advisor'
+        role: 'Technical Advisor',
+        links: {
+          linkedIn: 'https://www.linkedin.com/in/chaitanya-pedada-5896b1147/'
+        }
       },
       {
         name: 'Aidan Wolk',
-        role: 'Technical Advisor'
+        role: 'Technical Advisor',
+        links: {
+          linkedIn: 'https://www.linkedin.com/in/aidanwolk/'
+        }
       },
       {
         name: 'Hirday Gupta',
-        role: 'Technical Advisor'
+        role: 'Technical Advisor',
+        links: {
+          linkedIn: 'https://www.linkedin.com/in/hirday-gupta/'
+        }
+      },
+      {
+        name: 'Kevin Wang',
+        role: 'Technical Advisor',
+        links: {
+          linkedIn: 'https://www.linkedin.com/in/xorkevin/',
+          personal: 'https://xorkevin.com/'
+        }
+      },
+      {
+        name: 'Ayush Patel',
+        role: 'Product Advisor',
+        links: {
+          linkedIn: 'https://www.linkedin.com/in/ayushpatel34/'
+        }
       }
     ]
   }
