@@ -72,10 +72,6 @@ const RecruitmentSection = ({ type }) => {
   const appLink = recruitment[type].applicationLink
   return (
     <section>
-      <br />
-      <br />
-      <br />
-      <br />
       <h2>Recruitment Process</h2>
       <br />
       <Grid>
