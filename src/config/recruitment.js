@@ -62,7 +62,8 @@ export const APPLICATION_LINK = 'https://ucladevx.com/l/app'
 export const DEV_APPLICATION_LINK = 'https://ucladevx.com/l/devapp'
 
 const recruitment = {
-  quarter: 'Summer 2019',
+  quarter: 'Winter 2020',
+  isOpen: false,
   applicationLink: APPLICATION_LINK,
   pm: {
     applicationLink: APPLICATION_LINK,
