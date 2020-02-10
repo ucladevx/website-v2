@@ -17,7 +17,7 @@ const pageRoutes = {
   },
   projects: {
     component: Projects,
-    path: '/projects/:year(spring18)',
+    path: '/projects/:year(winter20)',
     exact: true
   },
   team: {

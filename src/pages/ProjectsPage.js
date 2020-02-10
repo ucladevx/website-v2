@@ -1,96 +1,176 @@
 import React from 'react'
 import styled from 'styled-components'
 import PropTypes from 'prop-types'
+import ReactModal from 'react-modal'
+
+import ImageGallery from 'react-image-gallery'
+import 'react-image-gallery/styles/scss/image-gallery.scss'
 
 import Container from '../components/Container'
 import ContainerBody from '../components/ContainerBody'
 import Text from '../components/Text'
-import { colors, breakpoints } from '../styles'
+import Row from '../components/Row'
+import { colors } from '../styles'
 import { projects } from '../config'
 
-const Image = styled.div`
-  background-image: url(${props => props.path});
-  background-color: ${colors.white};
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-  margin: auto;
-  text-align: center;
-  width: 100%;
-  border: 70px solid ${colors.white};
-
-  &:before {
-    content: '';
-    padding: 50% 0; /* vertical value as  100% equals width */
-    display: inline-block;
-    vertical-align: middle;
-  }
-
-  img {
-    max-height: 100%;
-    max-width: 100%;
-  }
-`
-
-const Description = styled.div`
-  margin: 30px 0;
-  white-space: pre-line;
-`
-
-const Panel = styled.div`
-  margin-top: 30px;
-  border-bottom: 1px solid ${colors.white};
+const ProjectPanel = styled.div`
   display: flex;
-  flex-flow: column;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+`
+
+const ProjectIcon = styled.div`
+  background-color: ${colors.white};
+  width: 210px;
+  height: 210px;
+  margin: 20px;
+  text-align: center;
+  border: 20px solid ${colors.white};
+  border-radius: 5%;
+  display: flex;
+  flex-direction: column;
   align-items: center;
+  justify-content: center;
+  justify-content: space-around;
 
-  ${breakpoints.md`
-    flex-flow: row;
-    border-bottom: none;
+  transition: margin 200ms;
+  &:hover {
+    margin-top: 10px;
+    margin-bottom: 30px;
+  }
 
-    ${Image} {
-      width: 35%;
-      flex-shrink: 0;
-    }
+  > img {
+    max-width: 100%;
+    max-height: 80%;
+    padding-bottom: 20px;
+    width: auto;
+    height: auto;
+  }
+`
 
-    ${'' /* Odd-numbered rows have image on left so need margin-left */}
-    &:nth-of-type(odd) {
-      ${Description} {
-        margin-left: 30px;
-      }
-    }
+const modalStyle = {
+  content: {
+    top: '50%',
+    left: '50%',
+    right: 'auto',
+    bottom: 'auto',
+    marginRight: '-50%',
+    transform: 'translate(-50%, -50%)',
+    maxWidth: '70%',
+    height: '70%',
+    backgroundColor: colors.white
+  },
+  overlay: {
+    position: 'fixed',
+    top: 0,
+    left: 0,
+    right: 0,
+    bottom: 0,
+    backgroundColor: 'rgba(0, 0, 0, 0.4)'
+  }
+}
 
-    ${'' /* Even-numbered rows have image on right so need margin-right */}
-    &:nth-of-type(even) {
-      flex-flow: row-reverse;
-      ${Description} {
-        margin-right: 30px;
-      }
-    }
-  `}
+const PaddedRowItem = styled.div`
+  padding: 10px;
+`
+
+const Grid = styled.div`
+  display: grid;
+  grid-auto-columns: 1fr;
+  grid-auto-flow: column;
+  grid-column-gap: 20px;
+`
+
+const Centered = styled(Row)`
+  justify-content: center;
+`
+
+const UnderlinedText = styled(Text)`
+  text-decoration: underline;
 `
 
 const Projects = ({ match }) => {
+  const [selectedProject, selectProject] = React.useState(null)
   const { year } = match.params
+
   return (
     <Container>
       <ContainerBody>
-        {projects[year].map(project => (
-          <Panel key={project.name}>
-            <Image path={project.image} />
-            <Description>
-              {project.link ? (
-                <a href={project.link}>
-                  <Text as="h1">{project.name}</Text>
-                </a>
-              ) : (
-                <Text as="h1">{project.name}</Text>
-              )}
-              <Text as="h5">{project.description}</Text>
-            </Description>
-          </Panel>
-        ))}
+        <Text as="h2">Current Projects</Text>
+        <br />
+        <ProjectPanel>
+          {projects[year].map(project => (
+            <ProjectIcon
+              key={project.name}
+              onClick={() => selectProject(project)}
+            >
+              <img src={project.logo} alt={`${project.name} logo`} />
+              <Text italic color={colors.darkBlue}>
+                {project.tagline}
+              </Text>
+            </ProjectIcon>
+          ))}
+        </ProjectPanel>
       </ContainerBody>
+      <ReactModal
+        isOpen={selectedProject != null}
+        style={modalStyle}
+        onRequestClose={() => selectProject(null)}
+      >
+        {selectedProject && (
+          <Grid>
+            <div>
+              <Text color={colors.black} as="h2">
+                {selectedProject.name}
+              </Text>
+              <br />
+              <Text color={colors.darkBlue}>{selectedProject.tagline}</Text>
+              <br />
+              <Text color={colors.darkBlue}>{selectedProject.description}</Text>
+              <Row>
+                <PaddedRowItem>
+                  <a href={selectedProject.link}>
+                    <UnderlinedText color={colors.darkBlue} as="h5">
+                      Project Link
+                    </UnderlinedText>
+                  </a>
+                </PaddedRowItem>
+                <PaddedRowItem>
+                  <a href={selectedProject.notion}>
+                    <UnderlinedText color={colors.darkBlue} as="h5">
+                      Notion Page
+                    </UnderlinedText>
+                  </a>
+                </PaddedRowItem>
+              </Row>
+            </div>
+            {selectedProject.screenshots ? (
+              <div>
+                <ImageGallery
+                  items={[{ original: selectedProject.logo }].concat(
+                    selectedProject.screenshots.map(image => ({
+                      original: image
+                    }))
+                  )}
+                  showPlayButton={false}
+                  showThumbnails={false}
+                  showFullscreenButton={false}
+                  showBullets
+                />
+              </div>
+            ) : (
+              <Centered>
+                <img
+                  src={selectedProject.logo}
+                  width="100%"
+                  alt={`${selectedProject.name} logo`}
+                />
+              </Centered>
+            )}
+          </Grid>
+        )}
+      </ReactModal>
     </Container>
   )
 }

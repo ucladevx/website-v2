@@ -21,7 +21,7 @@ export default [
   {
     label: 'PROJECTS',
     type: 'internal',
-    path: '/projects/spring18'
+    path: '/projects/winter20'
   },
   {
     label: 'TEAM',
