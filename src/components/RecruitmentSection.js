@@ -72,13 +72,6 @@ const RecruitmentSection = ({ type }) => {
   const appLink = recruitment[type].applicationLink
   return (
     <section>
-      {appLink ? (
-        <Button whiteFill as="a" href={appLink}>
-          Application
-        </Button>
-      ) : (
-        <h3>Application coming soon...</h3>
-      )}
       <br />
       <br />
       <br />
@@ -102,17 +95,32 @@ const RecruitmentSection = ({ type }) => {
           )
         })}
       </Grid>
-
       <h2>{recruitment.quarter} Recruitment Dates</h2>
       <br />
-      <Grid>
-        {recruitment[type].dates.map(dateInfo => (
-          <DateInfo key={dateInfo.name}>
-            <HeaderText>{dateInfo.name}</HeaderText>
-            <Text>{formatDate(dateInfo)}</Text>
-          </DateInfo>
-        ))}
-      </Grid>
+      {recruitment.isOpen ? (
+        <React.Fragment>
+          <Grid>
+            {recruitment[type].dates.map(dateInfo => (
+              <DateInfo key={dateInfo.name}>
+                <HeaderText>{dateInfo.name}</HeaderText>
+                <Text>{formatDate(dateInfo)}</Text>
+              </DateInfo>
+            ))}
+          </Grid>
+          {appLink ? (
+            <Button whiteFill as="a" href={appLink}>
+              Application
+            </Button>
+          ) : (
+            <h3>Application coming soon...</h3>
+          )}
+        </React.Fragment>
+      ) : (
+        <p>
+          Recruitment for {recruitment.quarter} is now closed. Please check back
+          towards the end of this quarter for information about next quarter.
+        </p>
+      )}
     </section>
   )
 }
