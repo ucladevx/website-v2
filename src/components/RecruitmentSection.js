@@ -58,6 +58,10 @@ const DateInfo = styled.div`
   margin-bottom: 50px;
 `
 
+const EmphasisedLink = styled.a`
+  text-decoration: underline;
+`
+
 const formatDate = date => {
   const formatter = d => format(d, 'MMMM Do')
   const baseDate = {
@@ -115,6 +119,9 @@ const RecruitmentSection = ({ type }) => {
         <p>
           Recruitment for {recruitment.quarter} is now closed. Please check back
           towards the end of this quarter for information about next quarter.
+          Leave your email{' '}
+          <EmphasisedLink href="http://eepurl.com/cFOmXH"> here</EmphasisedLink>{' '}
+          to receive an email when apps open up.
         </p>
       )}
     </section>
