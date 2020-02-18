@@ -10,20 +10,30 @@ import Container from '../components/Container'
 import ContainerBody from '../components/ContainerBody'
 import Text from '../components/Text'
 import Row from '../components/Row'
-import { colors } from '../styles'
+import { colors, breakpoints } from '../styles'
 import { projects } from '../config'
 
 const ProjectPanel = styled.div`
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  ${'' /* justify-content: center; */}
+  justify-content: center;
+  ${breakpoints.sm`
+    justify-content: flex-start;
+    margin-left: -20px;
+  `}
 `
 
 const ProjectIcon = styled.div`
   background-color: ${colors.white};
-  width: 210px;
-  height: 230px;
+  width: 250px;
+  height: 280px;
+
+  ${breakpoints.sm`
+    width: 210px;
+    height: 230px;
+  `}
+
   margin: 20px;
   text-align: center;
   border: 20px solid ${colors.white};
@@ -38,13 +48,14 @@ const ProjectIcon = styled.div`
   &:hover {
     margin-top: 10px;
     margin-bottom: 30px;
-    mou
+    cursor: pointer;
   }
 
   > img {
     max-width: 100%;
     max-height: 80%;
     padding-bottom: 20px;
+    padding-top: 20px;
     width: auto;
     height: auto;
   }
@@ -60,7 +71,7 @@ const modalStyle = {
     transform: 'translate(-50%, -50%)',
     maxWidth: '70%',
     height: '70%',
-    backgroundColor: colors.white
+    backgroundColor: colors.lightGray
   },
   overlay: {
     position: 'fixed',
@@ -83,7 +94,14 @@ const Centered = styled(Row)`
   justify-content: center;
 `
 
-const UnderlinedText = styled.span`
+const CenteredIfXS = styled(Row)`
+  justify-content: center;
+  ${breakpoints.sm`
+    justify-content: flex-start;
+  `}
+`
+
+const UnderlinedText = styled(Text)`
   text-decoration: underline;
 `
 
@@ -94,10 +112,9 @@ const Projects = ({ match }) => {
   return (
     <Container>
       <ContainerBody>
-        <Text as="h2">Current Projects</Text>
-        <br />
-        <br />
-        <br />
+        <CenteredIfXS>
+          <Text as="h2">Current Projects</Text>
+        </CenteredIfXS>
         <ProjectPanel>
           {projects[year].map(project => (
             <ProjectIcon
@@ -105,7 +122,7 @@ const Projects = ({ match }) => {
               onClick={() => selectProject(project)}
             >
               <img src={project.logo} alt={`${project.name} logo`} />
-              <Text semibold italic color={colors.darkBlue}>
+              <Text italic color={colors.darkBlue} size={12} weight={600}>
                 {project.tagline}
               </Text>
             </ProjectIcon>
@@ -129,20 +146,25 @@ const Projects = ({ match }) => {
               <Text color={colors.darkBlue}>{selectedProject.description}</Text>
               <br />
               <div>
-                <span>
-                  <a href={selectedProject.link}>
-                    <UnderlinedText color={colors.darkBlue} as="h5">
-                      Project Link
-                    </UnderlinedText>
-                  </a>
-                </span>
-                <span>
-                  <a href={selectedProject.notion}>
-                    <UnderlinedText color={colors.darkBlue} as="h5">
-                      Notion Page
-                    </UnderlinedText>
-                  </a>
-                </span>
+                <a href={selectedProject.link}>
+                  <UnderlinedText
+                    as="span"
+                    weight={600}
+                    color={colors.darkBlue}
+                  >
+                    Project Link
+                  </UnderlinedText>
+                </a>
+                <span style={{ paddingRight: '40px' }} />
+                <a href={selectedProject.notion}>
+                  <UnderlinedText
+                    as="span"
+                    weight={600}
+                    color={colors.darkBlue}
+                  >
+                    Notion Page
+                  </UnderlinedText>
+                </a>
               </div>
             </div>
             {selectedProject.screenshots ? (

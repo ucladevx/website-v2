@@ -34,6 +34,7 @@ const TeamPage = () => (
         <Text as="h1" key="header" bold>
           {title}
         </Text>,
+        <br />,
         <PeopleGrid key="people">
           {people.sort(sortingHat).map(person => (
             <PersonGridItem key={person.name} person={person} />
