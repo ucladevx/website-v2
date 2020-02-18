@@ -17,13 +17,13 @@ const ProjectPanel = styled.div`
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: center;
+  ${'' /* justify-content: center; */}
 `
 
 const ProjectIcon = styled.div`
   background-color: ${colors.white};
   width: 210px;
-  height: 210px;
+  height: 230px;
   margin: 20px;
   text-align: center;
   border: 20px solid ${colors.white};
@@ -38,6 +38,7 @@ const ProjectIcon = styled.div`
   &:hover {
     margin-top: 10px;
     margin-bottom: 30px;
+    mou
   }
 
   > img {
@@ -71,10 +72,6 @@ const modalStyle = {
   }
 }
 
-const PaddedRowItem = styled.div`
-  padding: 10px;
-`
-
 const Grid = styled.div`
   display: grid;
   grid-auto-columns: 1fr;
@@ -86,7 +83,7 @@ const Centered = styled(Row)`
   justify-content: center;
 `
 
-const UnderlinedText = styled(Text)`
+const UnderlinedText = styled.span`
   text-decoration: underline;
 `
 
@@ -99,6 +96,8 @@ const Projects = ({ match }) => {
       <ContainerBody>
         <Text as="h2">Current Projects</Text>
         <br />
+        <br />
+        <br />
         <ProjectPanel>
           {projects[year].map(project => (
             <ProjectIcon
@@ -106,7 +105,7 @@ const Projects = ({ match }) => {
               onClick={() => selectProject(project)}
             >
               <img src={project.logo} alt={`${project.name} logo`} />
-              <Text italic color={colors.darkBlue}>
+              <Text semibold italic color={colors.darkBlue}>
                 {project.tagline}
               </Text>
             </ProjectIcon>
@@ -120,7 +119,7 @@ const Projects = ({ match }) => {
       >
         {selectedProject && (
           <Grid>
-            <div>
+            <div style={{ padding: '25px' }}>
               <Text color={colors.black} as="h2">
                 {selectedProject.name}
               </Text>
@@ -128,22 +127,23 @@ const Projects = ({ match }) => {
               <Text color={colors.darkBlue}>{selectedProject.tagline}</Text>
               <br />
               <Text color={colors.darkBlue}>{selectedProject.description}</Text>
-              <Row>
-                <PaddedRowItem>
+              <br />
+              <div>
+                <span>
                   <a href={selectedProject.link}>
                     <UnderlinedText color={colors.darkBlue} as="h5">
                       Project Link
                     </UnderlinedText>
                   </a>
-                </PaddedRowItem>
-                <PaddedRowItem>
+                </span>
+                <span>
                   <a href={selectedProject.notion}>
                     <UnderlinedText color={colors.darkBlue} as="h5">
                       Notion Page
                     </UnderlinedText>
                   </a>
-                </PaddedRowItem>
-              </Row>
+                </span>
+              </div>
             </div>
             {selectedProject.screenshots ? (
               <div>

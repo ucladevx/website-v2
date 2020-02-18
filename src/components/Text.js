@@ -23,6 +23,10 @@ const getWeight = props => {
     return 'bold'
   }
 
+  if (props.semibold) {
+    return 'semibold'
+  }
+
   if (props.weight) {
     return props.weight
   }
