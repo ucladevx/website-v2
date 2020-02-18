@@ -4,7 +4,7 @@ S3_BUCKET="www.ucladevx.com"
 DEPLOY_BRANCH="master"
 BUILD_FOLDER="dist"
 
-if [[ $TRAVIS_BRANCH == $DEPLOY_BRANCH ]]; then
+if [[ $TRAVIS_BRANCH == $DEPLOY_BRANCH && $TRAVIS_PULL_REQUEST == "false" ]]; then
 
   # Build the website bundle/assets
   yarn build
