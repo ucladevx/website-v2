@@ -269,7 +269,7 @@ const Projects = ({ match }) => {
                   <Slideshow
                     logo={selectedProject.logo}
                     images={selectedProject.screenshots}
-                    project={selectProject.name}
+                    project={selectedProject.name}
                   />
                   <BottomGradient />
                 </div>
