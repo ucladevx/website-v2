@@ -109,6 +109,13 @@ const CenteredIfXS = styled(Row)`
   `}
 `
 
+const MobileHidden = styled.div`
+  display: none;
+  ${breakpoints.sm`
+    display: block;
+  `}
+`
+
 const UnderlinedText = styled(Text)`
   text-decoration: underline;
 `
@@ -158,6 +165,8 @@ const CloseButton = styled.a`
 const Slideshow = ({ images, logo, project }) => {
   const [index, setIndex] = React.useState(0)
 
+  console.log(project)
+
   return (
     <Centered>
       {[logo]
@@ -172,7 +181,7 @@ const Slideshow = ({ images, logo, project }) => {
           <img
             width={index === 0 ? '70%' : '100%' /* scale down logo */}
             src={image}
-            alt={`${project} ${index === 0 ? 'logo' : 'screenshot'}`}
+            alt={`${project} ${i === 0 ? 'logo' : 'screenshot'}`}
             hidden={index !== i}
           />
         ])}
@@ -252,12 +261,15 @@ const Projects = ({ match }) => {
                 </div>
               </div>
             </Centered>
-            <div style={{ backgroundColor: colors.white, margin: '-20px' }}>
+            <MobileHidden
+              style={{ backgroundColor: colors.white, margin: '-20px' }}
+            >
               {selectedProject.screenshots.length > 0 ? (
                 <div style={{ height: '100%' }}>
                   <Slideshow
                     logo={selectedProject.logo}
                     images={selectedProject.screenshots}
+                    project={selectProject.name}
                   />
                   <BottomGradient />
                 </div>
@@ -270,7 +282,7 @@ const Projects = ({ match }) => {
                   />
                 </Centered>
               )}
-            </div>
+            </MobileHidden>
             <CloseButton href="#" onClick={() => selectProject(null)}>
               &times;
             </CloseButton>
