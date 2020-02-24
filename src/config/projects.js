@@ -22,7 +22,7 @@ export default {
       description:
         'Bquest is a peer-to-peer platform that helps UCLA students find the right major. On Bquest undecided or undeclared UCLA students can find ambassadors from the majors they are interested in. Ambassadors share their personal experience and give students an insight into their major. This information can help students make good decisions.',
       logo: bQuestLogo,
-      screenshots: [bQuestScreenshot1, bQuestScreenshot2, bQuestScreenshot3],
+      screenshots: [],
       link: 'https://bquest.ucladevx.com/',
       notion:
         'https://www.notion.so/devxteams/BQuest-89a8f92e88f24d2daccfbd0ddbaef862'

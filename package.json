@@ -70,7 +70,6 @@
     "react": "^16.5.1",
     "react-dom": "^16.5.1",
     "react-ga": "^2.5.3",
-    "react-image-gallery": "^1.0.6",
     "react-modal": "^3.11.1",
     "react-router-dom": "^4.3.1",
     "reactjs-popup": "^1.2.0",

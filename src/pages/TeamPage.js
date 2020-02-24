@@ -31,7 +31,7 @@ const TeamPage = () => (
   <Container>
     <ContainerBody>
       {team.map(({ title, people }) => [
-        <Text as="h1" key="header" bold>
+        <Text as="h2" key="header">
           {title}
         </Text>,
         <br />,
