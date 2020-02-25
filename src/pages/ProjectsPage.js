@@ -162,10 +162,17 @@ const CloseButton = styled.a`
   font-size: 30px;
 `
 
-const Slideshow = ({ images, logo, project }) => {
-  const [index, setIndex] = React.useState(0)
+const Image = styled.div`
+  background-image: url(${props => props.image});
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  width: ${props => props.imageWidth};
+  height: 100%;
+`
 
-  console.log(project)
+const Slideshow = ({ images, logo }) => {
+  const [index, setIndex] = React.useState(0)
 
   return (
     <Centered>
@@ -178,10 +185,9 @@ const Slideshow = ({ images, logo, project }) => {
             onClick={() => setIndex(i)}
             image={image}
           />,
-          <img
-            width={index === 0 ? '70%' : '100%' /* scale down logo */}
-            src={image}
-            alt={`${project} ${i === 0 ? 'logo' : 'screenshot'}`}
+          <Image
+            imageWidth={i === 0 ? '70%' : '100%' /* scale down logo */}
+            image={image}
             hidden={index !== i}
           />
         ])}
@@ -239,16 +245,20 @@ const Projects = ({ match }) => {
                 </Text>
                 <br />
                 <div>
-                  <a href={selectedProject.link}>
-                    <UnderlinedText
-                      as="span"
-                      weight={600}
-                      color={colors.darkBlue}
-                    >
-                      Project Link
-                    </UnderlinedText>
-                  </a>
-                  <span style={{ paddingRight: '40px' }} />
+                  {selectedProject.link && (
+                    <>
+                      <a href={selectedProject.link}>
+                        <UnderlinedText
+                          as="span"
+                          weight={600}
+                          color={colors.darkBlue}
+                        >
+                          Project Link
+                        </UnderlinedText>
+                      </a>
+                      <span style={{ paddingRight: '40px' }} />
+                    </>
+                  )}
                   <a href={selectedProject.notion}>
                     <UnderlinedText
                       as="span"
@@ -264,12 +274,11 @@ const Projects = ({ match }) => {
             <MobileHidden
               style={{ backgroundColor: colors.white, margin: '-20px' }}
             >
-              {selectedProject.screenshots.length > 0 ? (
+              {(selectedProject.screenshots || []).length > 0 ? (
                 <div style={{ height: '100%' }}>
                   <Slideshow
                     logo={selectedProject.logo}
                     images={selectedProject.screenshots}
-                    project={selectedProject.name}
                   />
                   <BottomGradient />
                 </div>
