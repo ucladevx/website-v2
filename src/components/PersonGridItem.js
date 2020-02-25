@@ -9,6 +9,7 @@ const PersonImage = styled.img`
   object-position: center;
   width: 250px;
   height: 250px;
+  border-radius: 5%;
 `
 
 const PersonGridItemDiv = styled.div`
