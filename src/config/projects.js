@@ -69,7 +69,7 @@ export default {
       name: 'Bruin Bite',
       tagline: 'Where food meets friends',
       description:
-        'Bringing Bruins together one bite at a time!<br/><br/>With the ease of a few button pushes, Bruin Bite, matches you with new people to eat with at the dining halls! Our goal is to bring you an app that makes meeting fellow Bruins effortless.',
+        'Bringing Bruins together one bite at a time! With the ease of a few button pushes, Bruin Bite, matches you with new people to eat with at the dining halls! Our goal is to bring you an app that makes meeting fellow Bruins effortless.',
       logo: bruinBiteLogo,
       screenshots: [
         bruinbiteScreenshot1,

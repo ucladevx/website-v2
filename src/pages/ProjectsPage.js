@@ -160,6 +160,10 @@ const CloseButton = styled.a`
   top: 15px;
   right: 20px;
   font-size: 30px;
+
+  &:hover {
+    cursor: pointer;
+  }
 `
 
 const Image = styled.div`
@@ -292,7 +296,7 @@ const Projects = ({ match }) => {
                 </Centered>
               )}
             </MobileHidden>
-            <CloseButton href="#" onClick={() => selectProject(null)}>
+            <CloseButton onClick={() => selectProject(null)}>
               &times;
             </CloseButton>
           </Grid>
