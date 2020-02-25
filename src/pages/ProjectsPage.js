@@ -190,7 +190,7 @@ const Slideshow = ({ images, logo }) => {
             image={image}
           />,
           <Image
-            imageWidth={i === 0 ? '70%' : '100%' /* scale down logo */}
+            imageWidth={i === 0 ? '50%' : '100%' /* scale down logo */}
             image={image}
             hidden={index !== i}
           />
@@ -290,7 +290,7 @@ const Projects = ({ match }) => {
                 <Centered>
                   <img
                     src={selectedProject.logo}
-                    width="70%"
+                    width="50%"
                     alt={`${selectedProject.name} logo`}
                   />
                 </Centered>
