@@ -34,6 +34,9 @@ const HeroWrapper = styled.div`
   justify-content: center;
   align-items: center;
   background: ${colors.darkBlue};
+  background-image: url('/images/rocket-graphic.svg');
+  background-repeat: no-repeat;
+  background-position: bottom 0 right 0;
   color: ${colors.white};
   z-index: 1;
   height: calc(100vh - ${sizes.navbar.height}px);
