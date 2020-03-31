@@ -97,7 +97,7 @@ const RecruitmentSection = ({ type }) => {
       </Grid>
       <h2>{recruitment.quarter} Recruitment Dates</h2>
       <br />
-      {recruitment.isOpen ? (
+      {recruitment[type].isOpen ? (
         <React.Fragment>
           <Grid>
             {recruitment[type].dates.map(dateInfo => (

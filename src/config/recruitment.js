@@ -20,20 +20,14 @@ const teamDates = [
   {
     name: 'Application Release',
     type: 'single',
-    value: new Date('January 3, 2020'),
-    detail: 'Winter Break'
+    value: new Date('March 31, 2020'),
+    detail: 'Spring, Tuesday Week 1'
   },
   {
     name: 'Application Deadline',
     type: 'single',
-    value: new Date('January 7, 2020'),
-    detail: 'Fall, Tuesday of Week 1'
-  },
-  {
-    name: 'Recruiting Night',
-    type: 'single',
-    value: new Date('January 9, 2020'),
-    detail: 'Winter, Thursday of Week 1'
+    value: new Date('April 6, 2020'),
+    detail: 'Spring, Monday Week 2'
   }
 ]
 
@@ -59,13 +53,13 @@ const pmDates = [
 ]
 
 export const APPLICATION_LINK = 'https://ucladevx.com/l/app'
-export const DEV_APPLICATION_LINK = 'https://ucladevx.com/l/devapp'
+export const DEV_APPLICATION_LINK = 'https://ucladevx.com/l/spring_app'
 
 const recruitment = {
-  quarter: 'Winter 2020',
-  isOpen: false,
+  quarter: 'Spring 2020',
   applicationLink: APPLICATION_LINK,
   pm: {
+    isOpen: false,
     applicationLink: APPLICATION_LINK,
     dates: pmDates,
     process: [
@@ -96,6 +90,7 @@ const recruitment = {
     ]
   },
   team: {
+    isOpen: true,
     applicationLink: DEV_APPLICATION_LINK,
     dates: teamDates,
     process: [
@@ -109,13 +104,13 @@ const recruitment = {
         step: '2',
         name: 'Initial Screening',
         description:
-          'We will holistically evaluate applicants, looking for experience and passion. Following this, some of you will receive invites to Recruiting Night.'
+          'We will holistically evaluate applicants, looking for experience and passion.'
       },
       {
         step: '3',
-        name: 'Recruiting Night',
+        name: 'Team Interviews',
         description:
-          'This is your chance to impress teams and in turn for them to impress you. It’s a hybrid between a social and networking night and you can commit to teams of your choice.'
+          'This is your chance to impress teams and in turn for them to impress you. Teams that you indicated interest in on your application may reach out to contact you.'
       },
       {
         step: '4',

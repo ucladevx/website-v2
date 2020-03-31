@@ -13,11 +13,6 @@ import bruinbiteScreenshot1 from '../assets/images/screenshots/bruinbite1.png'
 import bruinbiteScreenshot2 from '../assets/images/screenshots/bruinbite2.png'
 import bruinbiteScreenshot3 from '../assets/images/screenshots/bruinbite3.png'
 
-import drugdeciderLogo from '../assets/images/productLogos/drugdecider.jpg'
-import drugdeciderScreenshot1 from '../assets/images/screenshots/drugdecider1.png'
-import drugdeciderScreenshot2 from '../assets/images/screenshots/drugdecider2.png'
-import drugdeciderScreenshot3 from '../assets/images/screenshots/drugdecider3.png'
-
 import bconnectLogo from '../assets/images/productLogos/bconnect.png'
 
 import twyneLogo from '../assets/images/productLogos/twyne.png'
@@ -78,21 +73,6 @@ export default {
       ],
       link: 'https://apps.apple.com/us/app/bruin-bite/id1388811699',
       notion: 'https://www.notion.so/BruinBite-69aba2195221449d92338391ff19b8ba'
-    },
-    {
-      name: 'DrugDecider',
-      tagline: 'Predict Effects of Your Medication',
-      description:
-        'DrugDecider(tentative name) uses Machine Learning to help patients and clinicians evaluate and predict the effects of certain psychiatric medications on specific patients.',
-      link: 'https://drugdecider.com/',
-      notion:
-        'https://www.notion.so/devxteams/DrugDecider-6bd66508c2054a669a935768c028e8d6',
-      logo: drugdeciderLogo,
-      screenshots: [
-        drugdeciderScreenshot1,
-        drugdeciderScreenshot2,
-        drugdeciderScreenshot3
-      ]
     },
     {
       name: 'BConnect',
