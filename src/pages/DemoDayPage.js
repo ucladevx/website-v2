@@ -240,9 +240,9 @@ const DemoDay = () => {
           <br />
           <Text as="p">
             Therefore, our Spring Demo Day will be hosted online using Zoom
-            conference calls. Each of our teams will host their own conference
-            calls, which will act like exhibition rooms where you can chat with
-            the team members, view product demos, and ask questions about their
+            meetings. Each of our teams will host their own conference calls,
+            which will act like exhibition rooms where you can chat with the
+            team members, view product demos, and ask questions about their
             products and journey.
           </Text>
           <br />
