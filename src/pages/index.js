@@ -1,4 +1,5 @@
 import HomePage from './HomePage'
+import DemoDay from './DemoDayPage'
 import RecruitmentPage from './RecruitmentPage'
 import Projects from './ProjectsPage'
 import DocsPage from './DocsPage'
@@ -8,6 +9,11 @@ const pageRoutes = {
   home: {
     component: HomePage,
     path: '/',
+    exact: true
+  },
+  demoday: {
+    component: DemoDay,
+    path: '/demoday',
     exact: true
   },
   recruitment: {
