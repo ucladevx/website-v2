@@ -247,7 +247,7 @@ const DemoDay = () => {
           </Text>
           <br />
           <Text as="p">
-            We will also have a main conference call where you can chat with
+            We will also have a main Zoom meeting where you can chat with
             current and past members of DevX and learn more about the club. This
             is also where we will be announcing our prize winners. We also have
             some exciting prizes for those of you who attend the event and
