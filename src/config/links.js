@@ -14,6 +14,11 @@
 
 export default [
   {
+    label: 'DEMO DAY',
+    type: 'internal',
+    path: '/demoday'
+  },
+  {
     label: 'RECRUITMENT',
     type: 'internal',
     path: '/recruitment'
