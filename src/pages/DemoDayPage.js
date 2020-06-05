@@ -7,7 +7,7 @@ import ContainerBody from '../components/ContainerBody'
 import Text from '../components/Text'
 import Row from '../components/Row'
 import { colors, breakpoints } from '../styles'
-import { projects } from '../config'
+import { demoday } from '../config'
 
 const ProjectPanel = styled.div`
   display: flex;
@@ -181,6 +181,7 @@ const TextContainer = styled.div`
   `}
 `
 
+// eslint-disable-next-line react/prop-types
 const Slideshow = ({ images, logo }) => {
   const [index, setIndex] = React.useState(0)
 
@@ -207,7 +208,7 @@ const Slideshow = ({ images, logo }) => {
 
 const DemoDay = () => {
   const [selectedProject, selectProject] = React.useState(null)
-  const year = 'winter20'
+  const year = 'spring20'
 
   return (
     <Container>
@@ -239,7 +240,7 @@ const DemoDay = () => {
           </Text>
           <br />
           <Text as="p">
-            Therefore, our Spring Demo Day will be hosted online using Zoom
+            Therefore, our Spring Demo Day is being be hosted online using Zoom
             meetings. Each of our teams will host their own conference calls,
             which will act like exhibition rooms where you can chat with the
             team members, view product demos, and ask questions about their
@@ -247,24 +248,69 @@ const DemoDay = () => {
           </Text>
           <br />
           <Text as="p">
-            We will also have a main Zoom meeting where you can chat with
-            current and past members of DevX and learn more about the club. This
-            is also where we will be announcing our prize winners. We also have
-            some exciting prizes for those of you who attend the event and
-            interact with the teams!
-          </Text>
-          <br />
-          <Text as="p">
-            On Demo Day, this website will be updated with links to all of our
-            teams conference calls. Stay tuned for more information!
+            We also have a main Zoom meeting where you can chat with members of
+            DevX and learn more about the club. This is also is also where we
+            will be announcing our prize winners. We also have some exciting
+            prizes for those of you who attend the event and interact interact
+            with the teams!
           </Text>
         </TextContainer>
         <br />
         <CenteredIfXS>
-          <Text as="h2">Our Projects</Text>
+          <Text as="h2">Main Room</Text>
         </CenteredIfXS>
+        <br />
+        <Text as="p">
+          Join this meeting at 8PM (Pacific Time) for the launch of Demo Day,
+          and at 9:45PM (Pacific Time) to see who wins our awards.
+        </Text>
+        <br />
+        <Text as="p">
+          <a href="https://ucla.zoom.us/j/91167926883?pwd=UkVPMFo2aDl1Z2ovMlZUMGVYT0F3QT09">
+            <UnderlinedText weight={600} color={colors.yellow}>
+              Join our main Demo Day Zoom Meeting!
+            </UnderlinedText>
+          </a>
+          <br />
+          You can also join this meeting to get more information about the club,
+          chat with members, or if you need help finding your way around this
+          virtual Demo Day.
+        </Text>
+        <br />
+        <CenteredIfXS>
+          <Text as="h2">Prizes</Text>
+        </CenteredIfXS>
+        <br />
+        <Text as="p">
+          Tonight, our judges will award a prize to the best overall product!
+          Stick around till the end of Demo Day to find out who our winners are!
+        </Text>
+        <br />
+        <Text as="p">
+          We will also be giving away 3 20$ gift cards to 3 randomly selected
+          participants who visit all the teams! Everytime you visit a product
+          demo, you can ask the team to give you their unique code. Once
+          you&apos;ve visited all the teams you can fill out{' '}
+          <a
+            href="https://airtable.com/shr8FPkJvlrZwpkGF"
+            style={{ color: colors.yellow }}
+          >
+            this
+          </a>{' '}
+          form to enter the raffle.
+        </Text>
+        <br />
+        <CenteredIfXS>
+          <Text as="h2">Project Demos</Text>
+        </CenteredIfXS>
+        <br />
+        <Text as="p">
+          The following projects will be demoing their products tonight! Click
+          on a project to find out more about them, and connect to their Zoom
+          meeting for the demo!
+        </Text>
         <ProjectPanel>
-          {projects[year].map(project => (
+          {demoday[year].map(project => (
             <ProjectIcon
               key={project.name}
               onClick={() => selectProject(project)}
@@ -303,6 +349,21 @@ const DemoDay = () => {
                 </Text>
                 <br />
                 <div>
+                  {selectedProject.zoomLink && (
+                    <>
+                      <a href={selectedProject.zoomLink}>
+                        <UnderlinedText
+                          as="span"
+                          weight={600}
+                          color={colors.darkBlue}
+                        >
+                          Click here to join this projects Zoom meeting!
+                        </UnderlinedText>
+                      </a>
+                      <span style={{ paddingRight: '40px' }} />
+                    </>
+                  )}
+                  <br />
                   {selectedProject.link && (
                     <>
                       <a href={selectedProject.link}>
