@@ -20,14 +20,14 @@ const teamDates = [
   {
     name: 'Application Release',
     type: 'single',
-    value: new Date('March 31, 2020'),
-    detail: 'Spring, Tuesday Week 1'
+    value: new Date('September 20, 2020'),
+    detail: 'Fall, Monday Week 0'
   },
   {
     name: 'Application Deadline',
     type: 'single',
-    value: new Date('April 6, 2020'),
-    detail: 'Spring, Monday Week 2'
+    value: new Date('October 7, 2020'),
+    detail: 'Fall, Wednesday Week 2'
   }
 ]
 
@@ -35,31 +35,31 @@ const pmDates = [
   {
     name: 'Application Release',
     type: 'single',
-    value: new Date('July 22, 2019'),
+    value: new Date('September 10, 2020'),
     detail: ''
   },
   {
     name: 'Application Deadline',
     type: 'single',
-    value: new Date('August 11, 2019'),
+    value: new Date('September 20, 2020'),
     detail: ''
   },
   {
     name: 'Decision Release',
     type: 'single',
-    value: new Date('September 1, 2019'),
+    value: new Date('September 22, 2020'),
     detail: ''
   }
 ]
 
-export const APPLICATION_LINK = 'https://ucladevx.com/l/app'
+export const APPLICATION_LINK = 'https://airtable.com/shrtBNfPLxssTMhfG'
 export const DEV_APPLICATION_LINK = 'https://ucladevx.com/l/spring_app'
 
 const recruitment = {
-  quarter: 'Spring 2020',
+  quarter: 'Fall 2020',
   applicationLink: APPLICATION_LINK,
   pm: {
-    isOpen: false,
+    isOpen: true,
     applicationLink: APPLICATION_LINK,
     dates: pmDates,
     process: [
@@ -90,7 +90,7 @@ const recruitment = {
     ]
   },
   team: {
-    isOpen: true,
+    isOpen: false,
     applicationLink: DEV_APPLICATION_LINK,
     dates: teamDates,
     process: [

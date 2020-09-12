@@ -117,9 +117,9 @@ const RecruitmentSection = ({ type }) => {
         </React.Fragment>
       ) : (
         <p>
-          Recruitment for {recruitment.quarter} is now closed. Please check back
-          towards the end of this quarter for information about next quarter.
-          Leave your email{' '}
+          Recruitment for {recruitment.quarter} is currently closed. Please
+          check back towards the end of this quarter for information about next
+          quarter. Leave your email{' '}
           <EmphasisedLink href="http://eepurl.com/cFOmXH"> here</EmphasisedLink>{' '}
           to receive an email when apps open up.
         </p>

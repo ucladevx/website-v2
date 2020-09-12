@@ -13,11 +13,11 @@
  */
 
 export default [
-  {
-    label: 'DEMO DAY',
-    type: 'internal',
-    path: '/demoday'
-  },
+  // {
+  //   label: 'DEMO DAY',
+  //   type: 'internal',
+  //   path: '/demoday'
+  // },
   {
     label: 'RECRUITMENT',
     type: 'internal',
