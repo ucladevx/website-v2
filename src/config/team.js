@@ -65,7 +65,7 @@ const team = [
       },
       {
         name: 'Narek Daduryan',
-        role: 'Community Engagment Officer',
+        role: 'Community Engagement Officer',
         email: 'narekdaduryan@gmail.com',
         links: {
           linkedIn: 'https://linkedin.com/in/ndaduryan'
