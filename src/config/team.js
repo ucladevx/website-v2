@@ -3,28 +3,27 @@ const team = [
     title: 'Executive Board',
     people: [
       {
-        name: 'Meera Rachamallu',
+        name: 'Hirday Gupta',
         role: 'President',
-        email: 'mrachamallu@ucla.edu',
+        email: 'hirday@ucla.edu',
         links: {
-          linkedIn: 'https://www.linkedin.com/in/meera-rachamallu/',
-          personal: 'http://meerarachamallu.me'
+          linkedIn: 'https://www.linkedin.com/in/hirday-gupta/'
         }
       },
       {
-        name: 'Terrence Ho',
+        name: 'Dhruv Sharma',
         role: 'Internal VP',
-        email: 'terrenceho.books@gmail.com',
+        email: 'dhruv.sharma@ucla.edu',
         links: {
-          linkedIn: 'https://www.linkedin.com/in/terrence-ho/'
+          linkedIn: 'https://www.linkedin.com/in/dhruvsharma78/'
         }
       },
       {
-        name: 'Yifan You',
+        name: 'Aryan Arora',
         role: 'External VP',
-        email: 'harry473417@ucla.edu',
+        email: 'aryan.arora@ucla.edu',
         links: {
-          linkedIn: 'https://www.linkedin.com/in/yifan-you/'
+          linkedIn: 'https://linkedin.com/in/aryanarora0/'
         }
       }
     ]
@@ -33,67 +32,74 @@ const team = [
     title: 'Officer Board',
     people: [
       {
-        name: 'April Guo',
+        name: 'Lucy Huo',
         role: 'Director of Recruiting',
+        email: 'lucendary@g.ucla.edu',
         links: {
-          linkedIn: 'https://www.linkedin.com/in/april-fangzhu-guo/'
+          linkedIn: 'https://www.linkedin.com/in/lucy-huo/'
         }
       },
       {
-        name: 'Austin Telles',
-        role: 'Director of Finance',
+        name: 'Anh Mac',
+        role: 'Director of Operations',
+        email: 'anhmvc@ucla.edu',
         links: {
-          linkedIn: 'https://www.linkedin.com/in/austintelles/'
+          linkedIn: 'https://linkedin.com/in/anhmvc'
         }
       },
       {
-        name: 'Monetha Raghani',
+        name: 'Samantha Garabedian',
         role: 'Director of Marketing',
+        email: 'samg2@ucla.edu',
         links: {
           linkedIn: 'https://www.linkedin.com/in/monetharaghani/'
         }
       },
       {
+        name: 'Anika Murthy',
+        role: 'Design Officer',
+        email: 'anikamurthy2@gmail.com',
+        links: {
+          linkedIn: 'https://www.linkedin.com/in/anikamurthy/'
+        }
+      },
+      {
+        name: 'Narek Daduryan',
+        role: 'Community Engagment Officer',
+        email: 'narekdaduryan@gmail.com',
+        links: {
+          linkedIn: 'https://linkedin.com/in/ndaduryan'
+        }
+      },
+      {
         name: 'Samuel Lee',
-        role: 'Director of Events/Operations',
+        role: 'Engineering Advisor',
+        email: 'samlee.csit@gmail.com',
         links: {
           linkedIn: 'https://www.linkedin.com/in/samuel-j-lee/'
         }
       },
       {
-        name: 'Chaitanya Pedada',
-        role: 'Technical Advisor',
+        name: 'Matthew Pineda',
+        role: 'Engineering Advisor',
+        email: 'matthewpineda@ucla.edu',
         links: {
-          linkedIn: 'https://www.linkedin.com/in/chaitanya-pedada-5896b1147/'
+          linkedIn: 'https://linkedin.com/in/matthewpineda'
         }
       },
       {
-        name: 'Aidan Wolk',
-        role: 'Technical Advisor',
+        name: 'Yifan You',
+        role: 'Product Advisor',
+        email: 'harry473417@ucla.edu',
         links: {
-          linkedIn: 'https://www.linkedin.com/in/aidanwolk/'
+          linkedIn: 'https://www.linkedin.com/in/yifan-you/'
         }
       },
       {
-        name: 'Hirday Gupta',
-        role: 'Technical Advisor',
-        links: {
-          linkedIn: 'https://www.linkedin.com/in/hirday-gupta/'
-        }
-      },
-      {
-        name: 'Kevin Wang',
-        role: 'Technical Advisor',
-        links: {
-          linkedIn: 'https://www.linkedin.com/in/xorkevin/',
-          personal: 'https://xorkevin.com/'
-        }
-      },
-      {
-        name: 'Ayush Patel',
+        name: 'Shreya Chatterjee',
         role: 'Product Advisor',
         links: {
-          linkedIn: 'https://www.linkedin.com/in/ayushpatel34/'
+          linkedIn: 'https://www.linkedin.com/in/shreya-chatterjee-79700514b/'
         }
       }
     ]

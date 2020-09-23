@@ -2,7 +2,7 @@ import HomePage from './HomePage'
 import DemoDay from './DemoDayPage'
 import RecruitmentPage from './RecruitmentPage'
 import Projects from './ProjectsPage'
-import DocsPage from './DocsPage'
+// import DocsPage from './DocsPage'
 import Team from './TeamPage'
 
 const pageRoutes = {
@@ -30,12 +30,12 @@ const pageRoutes = {
     component: Team,
     path: '/team',
     exact: true
-  },
-  docs: {
-    component: DocsPage,
-    path: '/docs',
-    exact: true
   }
+  //   docs: {
+  //     component: DocsPage,
+  //     path: '/docs',
+  //     exact: true
+  //   }
 }
 
 export default pageRoutes

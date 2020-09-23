@@ -2,7 +2,7 @@ import backendDevIcon from '../assets/images/backend-dev.svg'
 import frontendDevIcon from '../assets/images/frontend-dev.svg'
 import mobileDevIcon from '../assets/images/mobile-dev.svg'
 import marketingIcon from '../assets/images/marketing.svg'
-// import dataIcon from '../assets/images/data.svg'
+import dataIcon from '../assets/images/data.svg'
 import designerIcon from '../assets/images/designer.svg'
 
 const roles = {
@@ -25,6 +25,12 @@ const roles = {
       icon: mobileDevIcon,
       description:
         'Passionate about mobile platforms including iOS, Android and React Native. Will integrate APIs and translate design prototypes into code to create functional, native mobile applications.'
+    },
+    {
+      name: 'Game Developer',
+      icon: dataIcon,
+      description:
+        'Passionate about game development using web-based technologies such as WebGL or engines like Unity, Unreal, etc.'
     },
     {
       name: 'Designer',

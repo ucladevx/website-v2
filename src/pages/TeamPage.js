@@ -8,14 +8,14 @@ import PersonGridItem from '../components/PersonGridItem'
 
 import { team } from '../config'
 
-const sortingHat = (personA, personB) => {
-  // Make sure president comes first
-  if (personA.role === 'President') return -1
-  if (personB.role === 'President') return 1
+// const sortingHat = (personA, personB) => {
+//   // Make sure president comes first
+//   if (personA.role === 'President') return -1
+//   if (personB.role === 'President') return 1
 
-  // After that, sort people in alphabetical order of their name
-  return personA.name > personB.name ? 1 : -1
-}
+//   // After that, sort people in alphabetical order of their name
+//   return personA.name > personB.name ? 1 : -1
+// }
 
 const PeopleGrid = styled.div`
   margin-bottom: 80px;
@@ -36,7 +36,7 @@ const TeamPage = () => (
         </Text>,
         <br />,
         <PeopleGrid key="people">
-          {people.sort(sortingHat).map(person => (
+          {people.map(person => (
             <PersonGridItem key={person.name} person={person} />
           ))}
         </PeopleGrid>

@@ -32,10 +32,10 @@ export default [
     label: 'TEAM',
     type: 'internal',
     path: '/team'
-  },
-  {
-    label: 'DOCS',
-    type: 'internal',
-    path: '/docs'
   }
+  //   {
+  //     label: 'DOCS',
+  //     type: 'internal',
+  //     path: '/docs'
+  //   }
 ]

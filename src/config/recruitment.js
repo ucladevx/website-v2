@@ -20,14 +20,20 @@ const teamDates = [
   {
     name: 'Application Release',
     type: 'single',
-    value: new Date('September 20, 2020'),
-    detail: 'Fall, Monday Week 0'
+    value: new Date('September 23, 2020'),
+    detail: 'Prior to week 0'
   },
   {
     name: 'Application Deadline',
     type: 'single',
-    value: new Date('October 7, 2020'),
-    detail: 'Fall, Wednesday Week 2'
+    value: new Date('October 11, 2020'),
+    detail: 'Sunday of Week 1'
+  },
+  {
+    name: 'Recruiting Night',
+    type: 'single',
+    value: new Date('October 15, 2020'),
+    detail: 'Thursday of Week 2'
   }
 ]
 
@@ -45,9 +51,16 @@ const pmDates = [
     detail: ''
   },
   {
+    name: 'Interviews',
+    type: 'range',
+    from: new Date('September 24, 2020'),
+    to: new Date('September 28, 2020'),
+    detail: ''
+  },
+  {
     name: 'Decision Release',
     type: 'single',
-    value: new Date('September 22, 2020'),
+    value: new Date('September 30, 2020'),
     detail: ''
   }
 ]
@@ -90,7 +103,7 @@ const recruitment = {
     ]
   },
   team: {
-    isOpen: false,
+    isOpen: true,
     applicationLink: DEV_APPLICATION_LINK,
     dates: teamDates,
     process: [
