@@ -66,7 +66,7 @@ const pmDates = [
 ]
 
 export const APPLICATION_LINK = 'https://airtable.com/shrtBNfPLxssTMhfG'
-export const DEV_APPLICATION_LINK = 'https://ucladevx.com/l/spring_app'
+export const DEV_APPLICATION_LINK = 'https://airtable.com/shr8UwCVDbE22SJXC'
 
 const recruitment = {
   quarter: 'Fall 2020',
