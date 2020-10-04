@@ -70,7 +70,7 @@ export const DEV_APPLICATION_LINK = 'https://airtable.com/shr8UwCVDbE22SJXC'
 
 const recruitment = {
   quarter: 'Fall 2020',
-  applicationLink: APPLICATION_LINK,
+  applicationLink: DEV_APPLICATION_LINK,
   pm: {
     isOpen: true,
     applicationLink: APPLICATION_LINK,
