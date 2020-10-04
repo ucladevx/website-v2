@@ -26,7 +26,7 @@ const teamDates = [
   {
     name: 'Application Deadline',
     type: 'single',
-    value: new Date('October 11, 2020'),
+    value: new Date('October 7, 2020'),
     detail: 'Sunday of Week 1'
   },
   {
