@@ -20,19 +20,19 @@ const teamDates = [
   {
     name: 'Application Release',
     type: 'single',
-    value: new Date('September 23, 2020'),
-    detail: 'Prior to week 0'
+    value: new Date('January 1, 2021'),
+    detail: ''
   },
   {
     name: 'Application Deadline',
     type: 'single',
-    value: new Date('October 7, 2020'),
-    detail: 'Sunday of Week 1'
+    value: new Date('January 15, 2021'),
+    detail: 'Friday of Week 2'
   },
   {
-    name: 'Recruiting Night',
+    name: 'Info Session',
     type: 'single',
-    value: new Date('October 15, 2020'),
+    value: new Date('January 14, 2021'),
     detail: 'Thursday of Week 2'
   }
 ]
@@ -72,7 +72,7 @@ const recruitment = {
   quarter: 'Fall 2020',
   applicationLink: DEV_APPLICATION_LINK,
   pm: {
-    isOpen: true,
+    isOpen: false,
     applicationLink: APPLICATION_LINK,
     dates: pmDates,
     process: [
