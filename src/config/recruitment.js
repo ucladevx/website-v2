@@ -66,7 +66,7 @@ const pmDates = [
 ]
 
 export const APPLICATION_LINK = 'https://airtable.com/shrtBNfPLxssTMhfG'
-export const DEV_APPLICATION_LINK = 'https://airtable.com/shr8UwCVDbE22SJXC'
+export const DEV_APPLICATION_LINK = 'https://airtable.com/shrXpJjsAxOojx8Hb'
 
 const recruitment = {
   quarter: 'Fall 2020',
