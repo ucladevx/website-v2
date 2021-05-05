@@ -1,5 +1,7 @@
 sudo: required
 language: node_js
+install:
+  - yarn
 node_js:
   - node
 after_success:
