@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import PropTypes from 'prop-types'
-import format from 'date-fns/format'
+// import format from 'date-fns/format'
 
 import { colors, breakpoints } from '../styles'
 import Button from './Button'
@@ -62,16 +62,6 @@ const EmphasisedLink = styled.a`
   text-decoration: underline;
 `
 
-const formatDate = date => {
-  const formatter = d => format(d, 'MMMM Do')
-  const baseDate = {
-    single: formatter(date.value),
-    range: `${formatter(date.from)} - ${formatter(date.to)}`
-  }[date.type]
-
-  return `${baseDate}${date.detail ? ` (${date.detail})` : ''}`
-}
-
 const RecruitmentSection = ({ type }) => {
   const appLink = recruitment[type].applicationLink
   return (
@@ -103,7 +93,8 @@ const RecruitmentSection = ({ type }) => {
             {recruitment[type].dates.map(dateInfo => (
               <DateInfo key={dateInfo.name}>
                 <HeaderText>{dateInfo.name}</HeaderText>
-                <Text>{formatDate(dateInfo)}</Text>
+                {/* <Text>{formatDate(dateInfo)}</Text> */}
+                <Text>{dateInfo.detail}</Text>
               </DateInfo>
             ))}
           </Grid>

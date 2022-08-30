@@ -214,12 +214,12 @@ const DemoDay = () => {
     <Container>
       <ContainerBody>
         <CenteredIfXS>
-          <Text as="h2">Demo Day Spring 2020</Text>
+          <Text as="h2">Demo Day Spring 2022</Text>
         </CenteredIfXS>
         <br />
         <TextContainer>
           <Text as="p">
-            Welcome to the UCLA DevX Spring 2020 Demo Day! On Demo Day, DevX
+            Welcome to the UCLA DevX Spring 2022 Demo Day! On Demo Day, DevX
             teams will showcase their products and solutions to problems facing
             the UCLA community and beyond. Demo Day is on Thursday, June 4, from
             8PM to 10PM (Pacific Time).

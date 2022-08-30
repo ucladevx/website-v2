@@ -20,19 +20,19 @@ const teamDates = [
   {
     name: 'Application Release',
     type: 'single',
-    value: new Date('January 1, 2021'),
-    detail: ''
+    // value: 'TBD', //new Date('January 1, 2021'),
+    detail: 'First Day of the Quarter'
   },
   {
     name: 'Application Deadline',
     type: 'single',
-    value: new Date('January 15, 2021'),
+    // value: 'TBD', //new Date('January 15, 2021'),
     detail: 'Friday of Week 2'
   },
   {
     name: 'Info Session',
     type: 'single',
-    value: new Date('January 14, 2021'),
+    // value: 'TBD', //new Date('January 14, 2021'),
     detail: 'Thursday of Week 2'
   }
 ]
@@ -41,26 +41,26 @@ const pmDates = [
   {
     name: 'Application Release',
     type: 'single',
-    value: new Date('September 10, 2020'),
+    // value: 'TBD', //new Date('September 10, 2020'),
     detail: ''
   },
   {
     name: 'Application Deadline',
     type: 'single',
-    value: new Date('September 20, 2020'),
+    // value: 'TBD', //new Date('September 20, 2020'),
     detail: ''
   },
   {
     name: 'Interviews',
     type: 'range',
-    from: new Date('September 24, 2020'),
-    to: new Date('September 28, 2020'),
+    // from: 'TBD', //new Date('September 24, 2020'),
+    // to: 'TBD', //new Date('September 28, 2020'),
     detail: ''
   },
   {
     name: 'Decision Release',
     type: 'single',
-    value: new Date('September 30, 2020'),
+    // value: 'TBD', //new Date('September 30, 2020'),
     detail: ''
   }
 ]
@@ -69,7 +69,7 @@ export const APPLICATION_LINK = 'https://airtable.com/shrtBNfPLxssTMhfG'
 export const DEV_APPLICATION_LINK = 'https://airtable.com/shrXpJjsAxOojx8Hb'
 
 const recruitment = {
-  quarter: 'Fall 2020',
+  quarter: 'Fall 2022',
   applicationLink: DEV_APPLICATION_LINK,
   pm: {
     isOpen: false,

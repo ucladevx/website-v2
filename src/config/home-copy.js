@@ -6,22 +6,23 @@ const sections = [
     title: 'What is DevX',
     contents: [
       () =>
-        `Have you ever felt that all you were learning at UCLA was theory, with
-        little opportunities to build out practical applications?`,
+        `DevX is a student organization dedicated to providing UCLA students
+        with the opportunity to create practical applications.`,
       () =>
-        `DevX is a brand new program dedicated to solving that very problem!
-        Build out real-world projects to help tackle pressing problems
-        frustrating the UCLA community, grow your technical skills by pairing up
-        with experienced students, and build a network that lasts beyond
-        graduation.`
+        `We comprise of several project teams building out real-world
+        projects to help tackle pressing problems frustrating the UCLA
+        community and beyond. We welcome people of all backgrounds
+        including engineering, technology, management, marketing, design
+        and much more. `
     ]
   },
   {
     title: 'Our Initiative',
     contents: [
       () =>
-        `We focus on a wide variety of projects, but prioritize ventures that
-        improve the college experience for UCLA students.`,
+        `Make your ideas come to life, grow your technical
+        skills by pairing up with experienced students, and build a network
+        that lasts beyond graduation.`,
       () => `Every quarter we will develop solutions for the most popular initiatives
         by the community. Submit your own requests for problems you're facing.`
     ]
